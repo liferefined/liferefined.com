@@ -80,11 +80,9 @@ aside {
   @include transition-all;
 
   .navbar-header .navbar-brand {
-    color: $theme-primary;
     @include sans-serif-font;
     text-transform: uppercase;
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       color: darken($theme-primary, 10%);
     }
   }
