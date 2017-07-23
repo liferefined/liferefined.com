@@ -55,6 +55,10 @@ p {
   color: rgba(white, .7);
 }
 
+.peru {
+  color: $logo-peru;
+}
+
 section {
   padding: 100px 0;
 }
@@ -74,10 +78,6 @@ aside {
   border-color: rgba($theme-dark, .5);
   @include sans-serif-font;
   @include transition-all;
-
-  span.peru {
-    color: $logo-peru;
-  }
 
   .navbar-header .navbar-brand {
     color: $theme-primary;
