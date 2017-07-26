@@ -85,6 +85,17 @@ aside {
     &:hover, &:focus {
       color: darken($theme-primary, 10%);
     }
+    content: "";
+    width: 200px;
+    margin: 7px 0 0 7px;
+    background-image: url(../img/life_refined_text_only.svg);
+
+    @media (max-width: 768px) {
+      background-image: url(../img/life_refined_text_only_dark.svg);
+    }
+
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .nav {
     > li {
@@ -137,6 +148,9 @@ aside {
         &:focus {
           color: darken($theme-primary, 10%);
         }
+
+        width: 175px;
+        background-image: url(../img/life_refined_text_only_dark.svg);
       }
       .nav > li > a,
       .nav > li > a:focus {
@@ -180,6 +194,12 @@ header {
         color: rgba(white, .7);
         font-size: 16px;
         margin-bottom: 50px;
+      }
+
+      @media (max-width: 768px) {
+        img {
+          width: 75%;
+        }
       }
     }
   }
