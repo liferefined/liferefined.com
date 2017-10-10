@@ -336,12 +336,6 @@ header {
   padding: 15px 30px;
 }
 
-// Contact
-#contact .fa {
-  color: $theme-dark;
-  font-size: 4em;
-}
-
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
@@ -368,5 +362,10 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: $theme-dark;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 

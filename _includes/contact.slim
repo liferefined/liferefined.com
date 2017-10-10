@@ -2,18 +2,24 @@ section#contact
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        h2.section-heading Let's Get In Touch!
-        hr.primary/
-        p Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
-      .col-lg-2.col-lg-offset-2.text-center
-        a href=("https://twitter.com/{{ site.twitter_username }}")
-          i.fa.fa-twitter.fa-3x.wow.bounceIn data-wow-delay=".1s"
-          p {{ site.twitter_username }}
-      .col-lg-2.col-lg-offset-1.text-center
+        h2.section-heading Contact Us
+        hr.primary
         a href=("mailto:{{ site.email }}")
-          i.fa.fa-envelope-o.fa-3x.wow.bounceIn data-wow-delay=".1s"
-          p  {{ site.email }}
-      .col-lg-2.col-lg-offset-1.text-center
-        a href=("https://github.com/{{ site.github_username }}")
-          i.fa.fa-github.fa-3x.wow.bounceIn data-wow-delay=".1s"
-          p {{ site.github_username }}
+          span.fa-stack
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-envelope-o.fa-inverse.fa-stack-1x
+        p
+          | 14297 Bergen Boulevard
+          br
+          | Suite 100
+          br
+          | Noblesville, IN 46060
+
+      .col-lg-12
+        .grayscale
+          iframe {
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5104.9847424555655!2d-85.92725857006363!3d39.996052057971504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814c9fc298523bf%3A0x1b012a8d0d30a2a1!2s14297+Bergen+Blvd%2C+Noblesville%2C+IN+46060!5e0!3m2!1sen!2sus!4v1507606962444"
+            width="100%"
+            height="450"
+            frameborder="0"
+          }
