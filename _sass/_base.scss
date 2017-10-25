@@ -90,7 +90,7 @@ aside {
     margin: 7px 0 0 7px;
     background-image: url(../img/life_refined_text_only.svg);
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-sm) {
       background-image: url(../img/life_refined_text_only_dark.svg);
     }
 
@@ -120,7 +120,7 @@ aside {
       }
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm) {
     background-color: transparent;
     border-color: rgba(white, .3);
     .navbar-header .navbar-brand {
@@ -162,17 +162,17 @@ aside {
   }
 }
 
-// Homepage Header
-
+// Headers
 header {
   position: relative;
   width: 100%;
   min-height: auto;
   @include background-cover;
   background-position: center;
-  background-image: url('../img/back_gaze.jpg');
+
   text-align: center;
   color: white;
+
   .header-content {
     position: relative;
     text-align: center;
@@ -198,35 +198,15 @@ header {
         font-size: 4rem;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: $screen-sm) {
         img {
           width: 75%;
         }
       }
     }
   }
-  @media (min-width: 768px) {
-    min-height: 100%;
-    .header-content {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      padding: 0 50px;
-      .header-content-inner {
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-        p {
-          font-size: 18px;
-          max-width: 80%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    }
-  }
+
+  @include header('landing', 'large', 'back_gaze.jpg');
 }
 
 // Sections
@@ -288,7 +268,7 @@ header {
       opacity: 1;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm) {
     .portfolio-box-caption {
       .portfolio-box-caption-content {
         .project-category {
