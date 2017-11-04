@@ -71,11 +71,15 @@ section {
 
 section.flex {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-around;
 
   >* {
     width: 33%;
+  }
+
+  .full {
+    width: 100%;
   }
 }
 
@@ -104,10 +108,10 @@ aside {
     content: "";
     width: 200px;
     margin: 7px 0 0 7px;
-    background-image: url(../img/life_refined_text_only.svg);
+    background-image: url(/img/life_refined_text_only.svg);
 
     @media (max-width: $screen-sm) {
-      background-image: url(../img/life_refined_text_only_dark.svg);
+      background-image: url(/img/life_refined_text_only_dark.svg);
     }
 
     background-size: contain;
@@ -165,7 +169,7 @@ aside {
           color: darken($theme-primary, 10%);
         }
 
-        background-image: url(../img/life_refined_text_only_dark.svg);
+        background-image: url(/img/life_refined_text_only_dark.svg);
       }
       .nav > li > a,
       .nav > li > a:focus {
