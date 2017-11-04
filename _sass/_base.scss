@@ -8,6 +8,12 @@ body {
   @include serif-font;
 }
 
+body {
+  > :not(header):not(nav):not(section):not(aside) {
+    margin: 0 25px;
+  }
+}
+
 hr {
   border-color: $theme-primary;
   border-width: 3px;
@@ -61,6 +67,16 @@ p {
 
 section {
   padding: 100px 0;
+}
+
+section.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  >* {
+    width: 33%;
+  }
 }
 
 aside {
@@ -173,6 +189,21 @@ header {
   text-align: center;
   color: white;
 
+  &.about {
+    .header-content-inner {
+      background-color: rgba(117, 117, 117, 0.6);
+      border: 1px solid #999;
+      border-radius: 15px;
+      text-align: initial;
+      margin-top: 75px;
+      padding: 7px 37px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
   .header-content {
     position: relative;
     text-align: center;
@@ -207,6 +238,7 @@ header {
   }
 
   @include header('landing', 'large', 'back_gaze.jpg');
+  @include header('about', 'medium', 'back_field.jpg');
 }
 
 // Sections

@@ -27,6 +27,7 @@ github_username:  leviwilson
 # Build settings
 markdown: kramdown
 theme: minima
+permalink: none
 plugins:
   - jekyll-feed
   - jekyll-coffeescript
