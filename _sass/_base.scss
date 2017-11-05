@@ -42,6 +42,17 @@ p {
   margin-bottom: 20px;
 }
 
+ul.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  li {
+    font-size: 18px;
+    width: 33%;
+  }
+}
+
 .bg-primary {
   background-color: $theme-primary;
 }
@@ -225,7 +236,7 @@ header {
   text-align: center;
   color: white;
 
-  &.about {
+  &.subpage {
     .header-content-inner {
       color: white;
     }
@@ -264,7 +275,7 @@ header {
   }
 
   @include header('landing', 'large', 'back_gaze.jpg');
-  @include header('about', 'small', 'back_gaze.jpg');
+  @include header('subpage', 'small', 'back_gaze.jpg');
 }
 
 // Sections
