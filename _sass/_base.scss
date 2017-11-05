@@ -33,12 +33,7 @@ a {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   @include sans-serif-font;
 }
 
@@ -66,7 +61,19 @@ p {
 }
 
 section {
-  padding: 75px 0;
+  padding: 50px 0;
+
+  &.copy {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  &.back-girl {
+    background-image: url(/img/back_girl.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
 
   .carousel {
     .carousel-control {
@@ -77,6 +84,10 @@ section {
     .carousel-inner {
       min-height: 300px;
       padding: 0 10%;
+
+      li {
+        list-style: none;
+      }
     }
 
     .carousel-indicators {
@@ -217,16 +228,7 @@ header {
 
   &.about {
     .header-content-inner {
-      background-color: rgba(117, 117, 117, 0.6);
-      border: 1px solid #999;
-      border-radius: 15px;
-      text-align: initial;
-      margin-top: 75px;
-      padding: 7px 37px;
-
-      p {
-        margin: 0;
-      }
+      color: white;
     }
   }
 
@@ -236,9 +238,9 @@ header {
     padding: 100px 15px 100px;
     width: 100%;
     .header-content-inner {
+      margin-top: 50px;
+
       h1 {
-        font-weight: 700;
-        text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
       }
@@ -264,7 +266,7 @@ header {
   }
 
   @include header('landing', 'large', 'back_gaze.jpg');
-  @include header('about', 'medium', 'back_field.jpg');
+  @include header('about', 'small', 'back_gaze.jpg');
 }
 
 // Sections
