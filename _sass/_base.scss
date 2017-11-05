@@ -66,7 +66,29 @@ p {
 }
 
 section {
-  padding: 100px 0;
+  padding: 75px 0;
+
+  .carousel {
+    .carousel-control {
+      color: #ED8D24;
+      background: rgba(0,0,0,0);
+    }
+
+    .carousel-inner {
+      min-height: 300px;
+      padding: 0 10%;
+    }
+
+    .carousel-indicators {
+      li {
+        background-color: lightgrey;
+
+        &.active {
+          background-color: #ED8D24;
+        }
+      }
+    }
+  }
 }
 
 section.flex {
