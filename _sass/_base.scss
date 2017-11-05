@@ -2,10 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-}
-
-body {
   @include serif-font;
+  font-weight: 300;
 }
 
 body {
@@ -34,11 +32,12 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
   @include sans-serif-font;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -248,7 +247,6 @@ header {
         margin: 30px auto;
       }
       p {
-        font-weight: 300;
         color: rgba(white, .7);
         font-size: 16px;
         margin-bottom: 50px;
