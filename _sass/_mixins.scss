@@ -65,6 +65,19 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+@mixin section-image($name, $image, $image_md) {
+  &.#{$name} {
+    background-image: url('/img/#{$image}');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    @media (max-width: $screen-md) {
+      background-image: url('/img/#{$image_md}');
+    }
+  }
+}
+
 @mixin header($name, $size, $image, $image_md) {
   &.#{$name} {
     background-image: url('/img/#{$image}');

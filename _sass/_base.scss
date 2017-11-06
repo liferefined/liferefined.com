@@ -78,38 +78,9 @@ section {
     padding-right: 10%;
   }
 
-  &.back-girl {
-    background-image: url(/img/back_girl.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-
-    @media (max-width: $screen-md) {
-      background-image: url(/img/back_girl_md.jpg);
-    }
-  }
-
-  &.pregnancy {
-    background-image: url(/img/pregnancy.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-
-    @media (max-width: $screen-md) {
-      background-image: url(/img/pregnancy_md.jpg);
-    }
-  }
-
-  &.massage {
-    background-image: url(/img/massage.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-
-    @media (max-width: $screen-md) {
-      background-image: url(/img/massage_md.jpg);
-    }
-  }
+  @include section-image('back-girl', 'back_girl.jpg', 'back_girl_md.jpg');
+  @include section-image('pregnancy', 'pregnancy.jpg', 'pregnancy_md.jpg');
+  @include section-image('massage', 'massage.jpg', 'massage_md.jpg');
 
   .carousel {
     .carousel-control {
