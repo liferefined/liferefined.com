@@ -85,6 +85,20 @@ section {
     color: white;
   }
 
+  &.pregnancy {
+    background-image: url(/img/pregnancy.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
+  &.massage {
+    background-image: url(/img/massage.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
   .carousel {
     .carousel-control {
       color: #ED8D24;
@@ -276,6 +290,7 @@ header {
 
   @include header('landing', 'large', 'back_gaze.jpg');
   @include header('subpage', 'small', 'back_gaze.jpg');
+  @include header('kids', 'small', 'back_kids.jpg');
 }
 
 // Sections
