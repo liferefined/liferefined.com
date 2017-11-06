@@ -65,9 +65,13 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-@mixin header($name, $size, $image) {
+@mixin header($name, $size, $image, $image_md) {
   &.#{$name} {
-    background-image: url('../img/#{$image}');
+    background-image: url('/img/#{$image}');
+
+    @media (max-width: $screen-md) {
+      background-image: url('/img/#{$image_md}');
+    }
 
     $header-height: map-get($header-sizes, $size);
     $half-height: $header-height / 2;

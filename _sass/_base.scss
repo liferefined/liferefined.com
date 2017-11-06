@@ -83,6 +83,10 @@ section {
     background-size: cover;
     background-position: center;
     color: white;
+
+    @media (max-width: $screen-md) {
+      background-image: url(/img/back_girl_md.jpg);
+    }
   }
 
   &.pregnancy {
@@ -90,6 +94,10 @@ section {
     background-size: cover;
     background-position: center;
     color: white;
+
+    @media (max-width: $screen-md) {
+      background-image: url(/img/pregnancy_md.jpg);
+    }
   }
 
   &.massage {
@@ -97,6 +105,10 @@ section {
     background-size: cover;
     background-position: center;
     color: white;
+
+    @media (max-width: $screen-md) {
+      background-image: url(/img/massage_md.jpg);
+    }
   }
 
   .carousel {
@@ -288,9 +300,9 @@ header {
     }
   }
 
-  @include header('landing', 'large', 'back_gaze.jpg');
-  @include header('subpage', 'small', 'back_gaze.jpg');
-  @include header('kids', 'small', 'back_kids.jpg');
+  @include header('landing', 'large', 'back_gaze.jpg', 'back_gaze_md.jpg');
+  @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
+  @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
 }
 
 // Sections
