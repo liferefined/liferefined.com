@@ -186,6 +186,7 @@ aside {
         > a,
         > a:focus {
           color: $theme-primary !important;
+          font-weight: 500;
           background-color: transparent;
           &:hover {
             background-color: transparent;
