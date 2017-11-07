@@ -50,6 +50,14 @@ ul.flex {
   li {
     font-size: 18px;
     width: 33%;
+
+    @media (max-width: $screen-sm) {
+      width: 50%;
+    }
+
+    @media (max-width: $screen-xs) {
+      width: 100%;
+    }
   }
 }
 
@@ -131,6 +139,10 @@ section.flex {
 
   >* {
     width: 33%;
+
+    @media (max-width: $screen-xs) {
+      width: 100%;
+    }
   }
 
   .full {
