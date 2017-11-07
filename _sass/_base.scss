@@ -53,6 +53,20 @@ ul.flex {
   }
 }
 
+section.contact {
+  span.fa-stack {
+    margin-right: 15px;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: $theme-primary;
+  }
+}
+
 .bg-primary {
   background-color: $theme-primary;
 }
