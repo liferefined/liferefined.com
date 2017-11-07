@@ -11,9 +11,11 @@ nav#mainNav.navbar.navbar-default.navbar-fixed-top
 
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
-        li
-          a.page-scroll href="/about" About
-        li
-          a.page-scroll href="/services"  Services
-        li
-          a.page-scroll href="#contact"  Contact
+        {% for link in site.navigation %}
+          {% assign current = nil %}
+          {% if page.url == link.url %}
+            {% assign current = 'active' %}
+          {% endif %}
+          li.{{ current }}
+            a.page-scroll href="{{ link.url }}" {{ link.text }}
+        {% endfor %}

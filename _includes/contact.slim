@@ -1,13 +1,19 @@
-section#contact
+section.contact#contact
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
         h2.section-heading Contact Us
         hr.primary
+        a href="tel:+3176748857"
+          span.fa-stack
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-phone.fa-inverse.fa-stack-1x
+          | 317-674-8857
         a href=("mailto:{{ site.email }}")
           span.fa-stack
             i.fa.fa-circle.fa-stack-2x
             i.fa.fa-envelope-o.fa-inverse.fa-stack-1x
+          | {{ site.email }}
         p
           | 14297 Bergen Boulevard
           br

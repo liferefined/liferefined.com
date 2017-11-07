@@ -50,6 +50,29 @@ ul.flex {
   li {
     font-size: 18px;
     width: 33%;
+
+    @media (max-width: $screen-sm) {
+      width: 50%;
+    }
+
+    @media (max-width: $screen-xs) {
+      width: 100%;
+    }
+  }
+}
+
+section.contact {
+  span.fa-stack {
+    margin-right: 7px;
+  }
+
+  a {
+    color: black;
+    margin-right: 7px;
+  }
+
+  a:hover {
+    color: $theme-primary;
   }
 }
 
@@ -116,6 +139,10 @@ section.flex {
 
   >* {
     width: 33%;
+
+    @media (max-width: $screen-xs) {
+      width: 100%;
+    }
   }
 
   .full {
@@ -172,6 +199,7 @@ aside {
         > a,
         > a:focus {
           color: $theme-primary !important;
+          font-weight: 500;
           background-color: transparent;
           &:hover {
             background-color: transparent;
