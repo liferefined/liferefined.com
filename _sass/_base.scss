@@ -2,10 +2,14 @@ html,
 body {
   height: 100%;
   width: 100%;
+  @include serif-font;
+  font-weight: 300;
 }
 
 body {
-  @include serif-font;
+  > :not(header):not(nav):not(section):not(aside) {
+    margin: 0 25px;
+  }
 }
 
 hr {
@@ -27,19 +31,26 @@ a {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
   @include sans-serif-font;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+ul.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  li {
+    font-size: 18px;
+    width: 33%;
+  }
 }
 
 .bg-primary {
@@ -60,7 +71,56 @@ p {
 }
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
+
+  &.copy {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @include section-image('back-girl', 'back_girl.jpg', 'back_girl_md.jpg');
+  @include section-image('pregnancy', 'pregnancy.jpg', 'pregnancy_md.jpg');
+  @include section-image('massage', 'massage.jpg', 'massage_md.jpg');
+
+  .carousel {
+    .carousel-control {
+      color: #ED8D24;
+      background: rgba(0,0,0,0);
+    }
+
+    .carousel-inner {
+      min-height: 300px;
+      padding: 0 10%;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .carousel-indicators {
+      li {
+        background-color: lightgrey;
+
+        &.active {
+          background-color: #ED8D24;
+        }
+      }
+    }
+  }
+}
+
+section.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  >* {
+    width: 33%;
+  }
+
+  .full {
+    width: 100%;
+  }
 }
 
 aside {
@@ -88,10 +148,10 @@ aside {
     content: "";
     width: 200px;
     margin: 7px 0 0 7px;
-    background-image: url(../img/life_refined_text_only.svg);
+    background-image: url(/img/life_refined_text_only.svg);
 
-    @media (max-width: 768px) {
-      background-image: url(../img/life_refined_text_only_dark.svg);
+    @media (max-width: $screen-sm) {
+      background-image: url(/img/life_refined_text_only_dark.svg);
     }
 
     background-size: contain;
@@ -120,7 +180,7 @@ aside {
       }
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm) {
     background-color: transparent;
     border-color: rgba(white, .3);
     .navbar-header .navbar-brand {
@@ -149,7 +209,7 @@ aside {
           color: darken($theme-primary, 10%);
         }
 
-        background-image: url(../img/life_refined_text_only_dark.svg);
+        background-image: url(/img/life_refined_text_only_dark.svg);
       }
       .nav > li > a,
       .nav > li > a:focus {
@@ -162,26 +222,32 @@ aside {
   }
 }
 
-// Homepage Header
-
+// Headers
 header {
   position: relative;
   width: 100%;
   min-height: auto;
   @include background-cover;
   background-position: center;
-  background-image: url('../img/back_gaze.jpg');
+
   text-align: center;
   color: white;
+
+  &.subpage {
+    .header-content-inner {
+      color: white;
+    }
+  }
+
   .header-content {
     position: relative;
     text-align: center;
     padding: 100px 15px 100px;
     width: 100%;
     .header-content-inner {
+      margin-top: 50px;
+
       h1 {
-        font-weight: 700;
-        text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
       }
@@ -189,7 +255,6 @@ header {
         margin: 30px auto;
       }
       p {
-        font-weight: 300;
         color: rgba(white, .7);
         font-size: 16px;
         margin-bottom: 50px;
@@ -198,35 +263,17 @@ header {
         font-size: 4rem;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: $screen-sm) {
         img {
           width: 75%;
         }
       }
     }
   }
-  @media (min-width: 768px) {
-    min-height: 100%;
-    .header-content {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      padding: 0 50px;
-      .header-content-inner {
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-        p {
-          font-size: 18px;
-          max-width: 80%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    }
-  }
+
+  @include header('landing', 'large', 'back_gaze.jpg', 'back_gaze_md.jpg');
+  @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
+  @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
 }
 
 // Sections
@@ -288,7 +335,7 @@ header {
       opacity: 1;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm) {
     .portfolio-box-caption {
       .portfolio-box-caption-content {
         .project-category {
