@@ -33,11 +33,25 @@ section#about.bg-primary
       .col-md-12.text-center
         a.btn.btn-default.btn-xl href="/about" About Us
 
-{% include services.slim %}
+section.flex.text-center
+  .full
+    h2.section-heading Our Services
+    hr.primary/
+  .service-box
+    i.fa.fa-4x.fa-heart-o.wow.bounceIn.text-primary
+    h3 Nutritional Plans
+  .service-box
+    i.fa.fa-4x.fa-calendar.wow.bounceIn.text-primary
+    h3 Wellness Events
+  .service-box
+    i.fa.fa-4x.fa-bar-chart-o.wow.bounceIn.text-primary data-wow-delay=".1s"
+    h3 Measurable Results
+
 {% include portfolio.slim %}
 
 aside.bg-dark
   .container.text-center
     .call-to-action
+      a.btn.btn-primary.btn-xl href="/services" Find Out more
 
 {% include contact.slim %}
