@@ -304,6 +304,16 @@ header {
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
 }
 
+aside.footer {
+  clear: both;
+  font-size: 2rem;
+  padding: 15px 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
 // Sections
 
 .section-heading {
