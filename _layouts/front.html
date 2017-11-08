@@ -6,6 +6,8 @@
 <body id="page-top">
   {{ content }}
   {% include scripts.html %}
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"0a1361f21f1f3455468ee787e","lid":"9058c75a0e"}) })</script>
 </body>
 
 </html>
