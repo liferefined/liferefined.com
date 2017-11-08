@@ -29,6 +29,8 @@ navigation:
   url: /about/
 - text: Services
   url: /services/
+- text: Meet Us
+  url: /meet-us/
 - text: Contact
   url: /contact/
 
