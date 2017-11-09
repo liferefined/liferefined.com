@@ -256,7 +256,6 @@ header {
   width: 100%;
   min-height: auto;
   @include background-cover;
-  background-position: center;
 
   text-align: center;
   color: white;
@@ -302,7 +301,7 @@ header {
   @include header('landing', 'large', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
-  @include header('meet-us', 'small', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg');
+  @include header('meet-us', 'medium', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg', top);
 }
 
 aside.footer {

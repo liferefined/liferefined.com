@@ -78,9 +78,10 @@
   }
 }
 
-@mixin header($name, $size, $image, $image_md) {
+@mixin header($name, $size, $image, $image_md, $position:center) {
   &.#{$name} {
     background-image: url('/img/#{$image}');
+    background-position: $position;
 
     @media (max-width: $screen-md) {
       background-image: url('/img/#{$image_md}');
