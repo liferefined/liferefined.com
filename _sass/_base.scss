@@ -94,6 +94,7 @@ section.contact {
 }
 
 section {
+  clear: both;
   padding: 50px 0;
 
   &.copy {
@@ -305,7 +306,6 @@ header {
 }
 
 aside.footer {
-  clear: both;
   font-size: 2rem;
   padding: 15px 0;
 
