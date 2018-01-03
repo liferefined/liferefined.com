@@ -15,10 +15,11 @@ title: Life Refined - Blog
   </div>
 </header>
 
-{% for post in site.posts %}
 <section class="copy">
+{% for post in site.posts %}
   <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
   <em>{{ post.date | date: '%B %d, %Y' }}</em>
   <p>{{ post.excerpt }} <a href="{{ post.url }}">continue...</a></p>
-</section>
+  <hr>
 {% endfor %}
+</section>

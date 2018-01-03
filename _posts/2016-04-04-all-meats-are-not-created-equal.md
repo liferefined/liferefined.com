@@ -3,12 +3,12 @@ layout: post
 title: All Meats Are Not Created Equal
 excerpt_separator: <!--more-->
 ---
-![All Meats Are Not Equal](http://adjust2wellness.com/wp-content/uploads/Which-Looks-Better-2.png){: .pull-right}
-
 > "You are what you eat."
 
 We’ve all heard it, but do we really believe it?  There was a poster on the wall of my grade school cafeteria that showed a boy eating a piece of chicken and on top of his head was that red, pointy thing that’s on top of a chicken’s head (the farm boy in me wants you to know that’s called a “comb.”) I remember thinking how silly that was and it somewhat discouraged the notion it was trying to portray. 20 years later I sat in an auditorium in Philadelphia listening to Dr. James Chestnut, one of my mentors, who was telling us how when his daughter once asked if she could have McDonalds he simply said “Honey, your body uses everything you eat to make cells that keep you alive and functioning. Do you want those beautiful eyes of yours made out of fatty hamburgers and French fries or broccoli, carrots and apples?” Needless to say I’ve used this like with Trent and Drake a couple times.
 <!--more-->
+
+![All Meats Are Not Equal](http://adjust2wellness.com/wp-content/uploads/Which-Looks-Better-2.png){: .pull-right}
 
 So if we are what we eat, shouldn’t we be concerned about what the cow we are eating ate as well?  YES! While blasphemous coming from a farming community that grows the GMO crops that are turned into livestock feed, I assure you that the healthiest cows are not the ones consuming the “fortified” feed.  Same goes for chickens, lamb, bison, turkey and even fish.  So what’s so different about grass feed meats vs. grain fed?
 
