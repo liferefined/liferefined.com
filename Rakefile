@@ -1,3 +1,5 @@
+require 'fileutils'
+
 desc 'release to production'
 task :release do
   ENV['JEKYLL_ENV'] = 'production'
@@ -11,5 +13,22 @@ task :stage do
 end
 
 def deploy
-  puts `jekyll build && s3_website push && cat _site/sitemap.xml`
+  `jekyll build`
+  make_undiscoverable unless production?
+  puts `s3_website push && cat _site/robots.txt _site/sitemap.xml`
+end
+
+def production?
+  ENV['JEKYLL_ENV'] == 'production'
+end
+
+def make_undiscoverable
+  File.open('_site/robots.txt', 'w') do |f|
+    f.puts <<~ROBOTS
+             User-agent: *
+             Disallow: /
+           ROBOTS
+  end
+
+  FileUtils.rm '_site/sitemap.xml'
 end
