@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+  <header class="blog">
+    <div class="header-content">
+      <div class="header-content-inner text-center">
+        <h1>Blog</h2>
+        <hr />
+      </div>
+    </div>
+  </header>
+
+  {% for post in site.posts %}
+  <section class="copy">
+    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    <em>{{ post.date | date: '%B %d, %Y' }}</em>
+    <p>{{ post.excerpt }}</p>
+  </section>
+  {% endfor %}
+
+  {{ content }}
+  {% include footer.html %}
+
+  {% include scripts.html %}
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"0a1361f21f1f3455468ee787e","lid":"9058c75a0e"}) })</script>
+</body>
+
+</html>

@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6 {
   @include sans-serif-font;
 }
 
+a > h2, h3  {
+  color: black;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -316,6 +320,7 @@ header {
   @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
   @include header('meet-us', 'medium', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg', top);
+  @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
 }
 
 aside.footer {
