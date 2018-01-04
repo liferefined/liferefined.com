@@ -17,7 +17,7 @@ title: Life Refined - Blog
 
 <section class="copy blog-preview">
 {% for post in site.posts %}
-  {% capture direction %}{% cycle 'left', 'right' %}{% endcapture %}
+  {% capture direction %}{% cycle 'right', 'right' %}{% endcapture %}
   {% assign author = site.data.authors[post.author] %}
 
   <a href="{{ post.url }}">
