@@ -3,7 +3,7 @@
     {% if page.description %}
     {{ page.description }}
     {% elsif page.excerpt %}
-    {{ page.excerpt | strip_html }}
+    {{ page.content | strip_html | truncatewords: 100 }}
     {% else %}
     {{ site.description }}
     {% endif %}
