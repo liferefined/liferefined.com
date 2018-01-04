@@ -78,6 +78,30 @@ ul.flex {
   }
 }
 
+section {
+  &.blog {
+    img {
+      border: 1px solid #ccc;
+      border-radius: 1%;
+      margin: 0 15px;
+      padding: 5px;
+
+      &.post-theme {
+        float: right;
+        margin-right: 0;
+      }
+
+      @media (max-width: $screen-sm) {
+        &.post-theme {
+          float: none;
+          width: 100%;
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
 section.contact {
   span.fa-stack {
     margin-right: 7px;
