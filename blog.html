@@ -1,0 +1,39 @@
+---
+layout: front
+title: Life Refined - Blog
+---
+
+{% capture navigation_slim %}{% include nav.slim %}{% endcapture %}
+{{ navigation_slim | slimify }}
+
+<header class="blog">
+  <div class="header-content">
+    <div class="header-content-inner text-center">
+      <h1>Blog</h2>
+      <hr />
+    </div>
+  </div>
+</header>
+
+<section class="copy blog-preview">
+{% for post in site.posts %}
+  {% capture direction %}{% cycle 'right', 'right' %}{% endcapture %}
+  {% assign author = site.data.authors[post.author] %}
+
+  <a href="{{ post.url }}">
+    <h3>
+      {% if author %}<img class="profile profile-small" alt="{{ author.name }}" src="{{ author.photo }}">{% endif %}
+      {{ post.title }}
+    </h3>
+  </a>
+  <em>{{ post.date | date: '%B %d, %Y' }}</em>
+  <div class="clearfix text-justify">
+    {% if post.post_image %}
+    <div class="post-image-preview pull-{{ direction }}">
+      <img alt="{{ page.title }}" src="{{ post.post_image }}" class="post-theme">
+    </div>
+    {% endif %}
+    <p>{{ post.content | strip_html | truncatewords: 100 }} <a href="{{ post.url }}">Read more</a></p>
+  </div>
+{% endfor %}
+</section>

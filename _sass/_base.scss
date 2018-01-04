@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6 {
   @include sans-serif-font;
 }
 
+a > h2, h3  {
+  color: black;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -70,6 +74,79 @@ ul.flex {
 
     @media (max-width: $screen-xs) {
       width: 100%;
+    }
+  }
+}
+
+img {
+  &.profile {
+    margin: 0 !important;
+    padding: 2px !important;
+    height: 75px;
+    border-radius: 50% !important;
+    border: 1px solid $theme-primary !important;
+
+    &.profile-small {
+      height: 50px;
+    }
+  }
+}
+
+section {
+  .post-image-preview {
+    $circle-size: 200px;
+
+    display: inline-block;
+    position: relative;
+    width: $circle-size;
+    height: $circle-size;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid $theme-primary;
+
+    @media (max-width: $screen-sm) {
+      width: $circle-size / 2;
+      height: $circle-size / 2;
+    }
+
+    &.pull-left {
+      margin-right: 15px;
+    }
+
+    &.pull-right {
+      margin-left: 15px;
+    }
+
+    > img {
+      width: auto;
+      height: 100%;
+      margin-left: -$circle-size / 4;
+
+      @media (max-width: $screen-sm) {
+        margin-left: -$circle-size / 8;
+      }
+    }
+  }
+
+  &.blog {
+    img {
+      border: 1px solid #ccc;
+      border-radius: 1%;
+      margin: 0 15px;
+      padding: 5px;
+
+      &.post-theme {
+        float: right;
+        margin-right: 0;
+      }
+
+      @media (max-width: $screen-sm) {
+        &.post-theme {
+          float: none;
+          width: 100%;
+          margin: 15px 0;
+        }
+      }
     }
   }
 }
@@ -316,6 +393,8 @@ header {
   @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
   @include header('meet-us', 'medium', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg', top);
+  @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
+  @include header('post', 'small', 'blog.jpg', 'blog_md.jpg');
 }
 
 aside.footer {

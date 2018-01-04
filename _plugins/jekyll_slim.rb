@@ -18,4 +18,12 @@ module Jekyll
 
     HTML = '.html'.freeze
   end
+
+  module SlimFilters
+    def slimify(input)
+      Slim::Template.new { input }.render
+    end
+  end
 end
+
+Liquid::Template.register_filter(Jekyll::SlimFilters)

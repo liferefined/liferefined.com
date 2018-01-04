@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+{% capture navigation_slim %}{% include nav.slim %}{% endcapture %}
+{{ navigation_slim | slimify }}
+
+{% assign author = site.data.authors[page.author] %}
+
+<body id="page-top">
+  <header class="post">
+    <div class="header-content">
+      <div class="header-content-inner text-center">
+        <h1>{{ page.title }}</h1>
+        <hr>
+      </div>
+    </div>
+  </header>
+
+  <section class="copy blog">
+    {% if author %}
+    <img class="profile" alt="{{ author.name }}" src="{{ author.photo }}">
+    <a href="{{ author.url }}" target="_blank">{{ author.name }}</a> wrote this on
+    {% endif %}
+    {{ page.date | date: '%B %d, %Y' }} / <a href="/blog">Blog</a>
+    {% if page.post_image %}
+    <img alt="{{ page.title }}" src="{{ page.post_image }}" class="post-theme">
+    {% endif %}
+    <div class="text-justify">
+      {{ content }}
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+  {% include scripts.html %}
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"0a1361f21f1f3455468ee787e","lid":"9058c75a0e"}) })</script>
+</body>
+
+</html>

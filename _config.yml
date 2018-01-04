@@ -15,10 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Life Refined
 email: connect@liferefined.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: Life Refined Chiropractic exists to radically reenergize our community and give an edge to those driven to live life at 100%.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.liferefined.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -29,6 +26,8 @@ navigation:
   url: /about/
 - text: Services
   url: /services/
+- text: Blog
+  url: /blog/
 - text: Meet Us
   url: /meet-us/
 - text: Contact
