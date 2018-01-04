@@ -80,14 +80,21 @@ ul.flex {
 
 section {
   .post-image-preview {
+    $circle-size: 200px;
+
     display: inline-block;
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: $circle-size;
+    height: $circle-size;
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid $theme-primary;
     margin-top: 15px;
+
+    @media (max-width: $screen-sm) {
+      width: $circle-size / 2;
+      height: $circle-size / 2;
+    }
 
     &.pull-left {
       margin-right: 15px;
@@ -100,7 +107,11 @@ section {
     > img {
       width: auto;
       height: 100%;
-      margin-left: -50px;
+      margin-left: -$circle-size / 4;
+
+      @media (max-width: $screen-sm) {
+        margin-left: -$circle-size / 8;
+      }
     }
   }
 
