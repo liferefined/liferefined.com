@@ -103,7 +103,6 @@ section {
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid $theme-primary;
-    margin-top: 15px;
 
     @media (max-width: $screen-sm) {
       width: $circle-size / 2;
