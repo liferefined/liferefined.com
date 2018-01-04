@@ -1,5 +1,6 @@
 ---
 layout: post
+author: dr_nate
 title: Live Life Closer to 100%
 post_image: http://adjust2wellness.com/wp-content/uploads/Live-Life-.jpg
 ---

@@ -78,6 +78,20 @@ ul.flex {
   }
 }
 
+img {
+  &.profile {
+    margin: 0 !important;
+    padding: 2px !important;
+    height: 75px;
+    border-radius: 50% !important;
+    border: 1px solid $theme-primary !important;
+
+    &.profile-small {
+      height: 50px;
+    }
+  }
+}
+
 section {
   .post-image-preview {
     $circle-size: 200px;
@@ -88,7 +102,6 @@ section {
     height: $circle-size;
     overflow: hidden;
     border-radius: 50%;
-    border: 2px solid $theme-primary;
     margin-top: 15px;
 
     @media (max-width: $screen-sm) {

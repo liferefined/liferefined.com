@@ -1,5 +1,6 @@
 ---
 layout: post
+author: dr_staci
 title: Chiropractic Care and Ear Infections
 post_image: /assets/posts/images/chiropractic-care-and-ear-infections.jpg
 ---

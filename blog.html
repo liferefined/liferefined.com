@@ -18,7 +18,14 @@ title: Life Refined - Blog
 <section class="copy blog-preview">
 {% for post in site.posts %}
   {% capture direction %}{% cycle 'left', 'right' %}{% endcapture %}
-  <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+  {% assign author = site.data.authors[post.author] %}
+
+  <a href="{{ post.url }}">
+    <h3>
+      {% if author %}<img class="profile profile-small" alt="{{ author.name }}" src="{{ author.photo }}">{% endif %}
+      {{ post.title }}
+    </h3>
+  </a>
   <em>{{ post.date | date: '%B %d, %Y' }}</em>
   <div class="clearfix text-justify">
     {% if post.post_image %}
