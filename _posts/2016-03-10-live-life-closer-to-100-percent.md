@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Live Life Closer to 100%
+post_image: http://adjust2wellness.com/wp-content/uploads/Live-Life-.jpg
 ---
 I’m continually encouraging people to live their life consciously by asking questions that examine the reasons behind the decisions they make.  Earlier today I asked someone who was in the office to get checked and adjusted, “What are you open to receiving from today’s adjustment?”  Their answer wasn’t an uncommon one, in fact it’s one I hear every day, but yesterday it struck a chord with me.  He answered “To make certain everything in my nerve system is functioning properly.”
-
-![Life life to your 100%](http://adjust2wellness.com/wp-content/uploads/Live-Life-.jpg){: .pull-right}
 
 Those that know me and our office know that he hit several of my favorite key terms when it comes to Chiropractic care;  nerve system and function.  Often times that would be all it took put you in my good graces and we would have been onto our checkup; but not today.
 

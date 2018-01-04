@@ -79,6 +79,31 @@ ul.flex {
 }
 
 section {
+  .post-image-preview {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid $theme-primary;
+    margin-top: 15px;
+
+    &.pull-left {
+      margin-right: 15px;
+    }
+
+    &.pull-right {
+      margin-left: 15px;
+    }
+
+    > img {
+      width: auto;
+      height: 100%;
+      margin-left: -50px;
+    }
+  }
+
   &.blog {
     img {
       border: 1px solid #ccc;

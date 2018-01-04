@@ -17,9 +17,16 @@ title: Life Refined - Blog
 
 <section class="copy blog-preview">
 {% for post in site.posts %}
+  {% capture direction %}{% cycle 'left', 'right' %}{% endcapture %}
   <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
   <em>{{ post.date | date: '%B %d, %Y' }}</em>
-  <p>{{ post.excerpt }} <a href="{{ post.url }}">continue...</a></p>
-  <hr>
+  <div class="clearfix text-justify">
+    {% if post.post_image %}
+    <div class="post-image-preview pull-{{ direction }}">
+      <img alt="{{ page.title }}" src="{{ post.post_image }}" class="post-theme">
+    </div>
+    {% endif %}
+    <p>{{ post.excerpt }} <a href="{{ post.url }}">continue...</a></p>
+  </div>
 {% endfor %}
 </section>

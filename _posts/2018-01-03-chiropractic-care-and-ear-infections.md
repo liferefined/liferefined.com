@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Chiropractic Care and Ear Infections
+post_image: /assets/posts/images/chiropractic-care-and-ear-infections.jpg
 ---
-![Child holding his ears](/assets/posts/images/chiropractic-care-and-ear-infections.jpg){: .post-theme}
 Ask most any parent about ear infections, and you will most likely hear one horror story after another. Ear infection (otitis media), is one of the most common reason for visits to the pediatrician’s office. It is estimated that over 30 million visits are made every year in an attempt to deal with this
 problem alone!
 

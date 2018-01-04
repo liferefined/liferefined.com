@@ -19,6 +19,10 @@
   <section class="copy blog">
     Posted on {{ page.date | date: '%B %d, %Y' }} / <a href="/blog">Blog</a>
     <hr align="left">
+    {% if page.post_image %}
+    <img alt="{{ page.title }}" src="{{ page.post_image }}" class="post-theme">
+    {% endif %}
+    <!-- ![Child holding his ears](/assets/posts/images/chiropractic&#45;care&#45;and&#45;ear&#45;infections.jpg){: .post&#45;theme} -->
     <div class="text-justify">
       {{ content }}
     </div>
