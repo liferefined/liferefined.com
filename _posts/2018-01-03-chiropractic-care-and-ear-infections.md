@@ -4,11 +4,9 @@ author: dr_staci
 title: Chiropractic Care and Ear Infections
 post_image: /assets/posts/images/chiropractic-care-and-ear-infections.jpg
 ---
-Ask most any parent about ear infections, and you will most likely hear one horror story after another. Ear infection (otitis media), is one of the most common reason for visits to the pediatrician’s office. It is estimated that over 30 million visits are made every year in an attempt to deal with this
-problem alone!
+Ask most any parent about ear infections, and you will most likely hear one horror story after another. Ear infection (otitis media), is one of the most common reason for visits to the pediatrician’s office. It is estimated that over 30 million visits are made every year in an attempt to deal with this problem alone!
 
-The most common symptoms of an ear infection include earache, a feeling of pressure, and perhaps difficulty hearing due to increased amounts of fluid.
-Teething often produces similar symptoms, even though no infection might actually be present.
+The most common symptoms of an ear infection include earache, a feeling of pressure, and perhaps difficulty hearing due to increased amounts of fluid.  Teething often produces similar symptoms, even though no infection might actually be present.
 
 ## Antibiotics?
 Historically, the ‘treatment’ for ear infections has been antibiotics. This method of treatment has come under severe attack over the past several

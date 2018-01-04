@@ -33,7 +33,7 @@ title: Life Refined - Blog
       <img alt="{{ page.title }}" src="{{ post.post_image }}" class="post-theme">
     </div>
     {% endif %}
-    <p>{{ post.excerpt }} <a href="{{ post.url }}">continue...</a></p>
+    <p>{{ post.content | strip_html | truncatewords: 100 }} <a href="{{ post.url }}">Read more</a></p>
   </div>
 {% endfor %}
 </section>
