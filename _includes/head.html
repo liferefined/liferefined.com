@@ -1,7 +1,19 @@
 <head>
   {% capture description %}
-  {% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
+    {% if page.description %}
+    {{ page.description }}
+    {% elsif page.excerpt %}
+    {{ page.excerpt | strip_html }}
+    {% else %}
+    {{ site.description }}
+    {% endif %}
   {% endcapture %}
+
+  {% assign author = site.data.authors[page.author] %}
+
+  {% if author %}
+  <link rel="author" href="{{ author.url }}" />
+  {% endif %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
