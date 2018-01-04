@@ -1,31 +1,23 @@
 <head>
-  {% capture description %}
-    {% if page.description %}
-    {{ page.description }}
-    {% elsif page.excerpt %}
-    {{ page.content | strip_html | truncatewords: 100 }}
-    {% else %}
-    {{ site.description }}
-    {% endif %}
-  {% endcapture %}
-
+  {% capture description %}{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.content | strip_html | truncatewords: 100 }}{% endif %}{% endcapture %}
   {% assign author = site.data.authors[page.author] %}
 
-  {% if author %}
-  <link rel="author" href="{{ author.url }}" />
+  {% if author %}<link rel="author" href="{{ author.url }}" />{% endif %}
+
+  {% if description != "" %}
+  <meta name="description" content="{{ description }}">
+  <meta property="og:description" content="{{ description }}" />
   {% endif %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ description }}">
   <meta name="author" content="">
 
   <meta property="og:image" content="https://www.liferefined.com/img/og_image.png" />
   <meta property="og:url" content="https://www.liferefined.com{{ page.url }}" />
   <meta property="og:type" content="{{ page.type }}" />
   <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{{ description }}" />
 
   <title>{{ page.title }}</title>
 
