@@ -13,7 +13,7 @@ There can be a variety of precipitating factors that often include birth trauma 
 
 Chiropractic plays a role in assisting Colic, reflux and constipation as they are often a symptom of an underlying nerve miscommunication.  If the nerves that travel from the brain to the stomach and digestive organs have less than 100% communication effectiveness, symptoms can present.  In cases of colic, excessive fussiness, difficulty sleeping, constipation and discomfort with tummy time are some of the most common symptoms that present. Chiropractic adjustments are meant to correct subluxation (pressure on the nerves) and allow the body to heal and function the way it was designed.
 
-In retrospect, I would love for someone to have mentioned to my mom that there was a possible solution found just a few miles away in town at Dr. Gilbert’s office. In reality, I believe my family experience allows me extra compassion for those moms that come into our office wondering “What more can I do?!
+In retrospect, I would love for someone to have mentioned to my mom that there was a possible solution found just a few miles away in town at Dr. Gilbert’s office. In reality, I believe my family experience allows me extra compassion for those moms that come into our office wondering “What more can I do?!”
 
 
 ## Breastfeeding & Natural Alternatives and Supplements
