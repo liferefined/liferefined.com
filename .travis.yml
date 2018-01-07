@@ -1,6 +1,5 @@
 language: ruby
 cache: bundler
+script: bundle
 install:
-  - bundle
-script:
   - if [ "$TRAVIS_BRANCH" != "master" ]; then bundle exec rake stage; else bundle exec rake release; fi
