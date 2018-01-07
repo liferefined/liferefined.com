@@ -1,6 +1,8 @@
 <head>
   {% capture description %}{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.content | strip_html | truncatewords: 100 }}{% endif %}{% endcapture %}
+  {% capture og_image %}{% if page.post_image %}{{ page.post_image }}{% else %}{{ '/img/og_image.png' }}{% endif %}{% endcapture %}
   {% assign author = site.data.authors[page.author] %}
+
 
   {% if author %}<link rel="author" href="{{ author.url }}" />{% endif %}
 
@@ -14,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
 
-  <meta property="og:image" content="https://www.liferefined.com/img/og_image.png" />
+  <meta property="og:image" content="https://www.liferefined.com{{ og_image }}" />
   <meta property="og:url" content="https://www.liferefined.com{{ page.url }}" />
   <meta property="og:type" content="{{ page.type }}" />
   <meta property="og:title" content="{{ page.title }}" />
