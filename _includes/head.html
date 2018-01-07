@@ -18,7 +18,7 @@
   <meta property="og:image" content="https://www.liferefined.com{{ og_image }}" />
   <meta property="og:url" content="https://www.liferefined.com{{ page.url }}" />
   <meta property="og:type" content="{{ page.type }}" />
-  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:title" content="{{ page.title | escape }}" />
 
   <title>{{ page.title }}</title>
 
