@@ -1,31 +1,21 @@
 require 'fileutils'
 
-task(:default) {}
+task default: [:build, :deploy]
 
-desc 'release to production'
-task :release do
-  ENV['JEKYLL_ENV'] = 'production'
-  deploy
-end
-
-desc 'release to staging'
-task :stage do
-  ENV['JEKYLL_ENV'] = 'development'
-  deploy
-end
-
-def deploy
-  build
-  puts `s3_website push && cat _site/robots.txt _site/sitemap.xml`
-end
-
-def build
+desc 'build the site'
+task :build do
   if production?
-    `jekyll build`
+    puts `jekyll build`
   else
-    `jekyll build --drafts`
+    puts `jekyll build --drafts`
     make_undiscoverable
   end
+  puts `cat _site/robots.txt _site/sitemap.xml`
+end
+
+desc 'deploy'
+task :deploy do
+  puts `s3_website push`
 end
 
 def production?
