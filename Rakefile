@@ -19,7 +19,7 @@ task :deploy do
 end
 
 def production?
-  ENV['JEKYLL_ENV'] == 'production'
+  ENV['JEKYLL_ENV'] == 'production' || ENV['TRAVIS_BRANCH'] == 'master'
 end
 
 def make_undiscoverable

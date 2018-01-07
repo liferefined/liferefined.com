@@ -1,12 +1,7 @@
 language: ruby
 script: bundle
 deploy:
-  - provider: script
-    script: ./deploy.sh stage
-    on:
-      all_branches: true
-      condition: $TRAVIS_BRANCH != master
-  - provider: script
-    script: ./deploy.sh release
-    on:
-      branch: master
+  provider: script
+  skip_cleanup: true
+  script: gem install s3_website && s3_website push
+  all_branches: true
