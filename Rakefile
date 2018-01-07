@@ -13,9 +13,17 @@ task :stage do
 end
 
 def deploy
-  `jekyll build`
-  make_undiscoverable unless production?
+  build
   puts `s3_website push && cat _site/robots.txt _site/sitemap.xml`
+end
+
+def build
+  if production?
+    `jekyll build`
+  else
+    `jekyll build --drafts`
+    make_undiscoverable
+  end
 end
 
 def production?
