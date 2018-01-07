@@ -2,11 +2,11 @@ language: ruby
 script: bundle
 deploy:
   - provider: script
-    script: bundle exec rake stage
+    script: deploy.sh stage
     on:
       all_branches: true
       condition: $TRAVIS_BRANCH != master
   - provider: script
-    script: bundle exec rake release
+    script: deploy.sh release
     on:
       branch: master
