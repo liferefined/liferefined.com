@@ -1,6 +1,6 @@
 s3_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
 s3_secret: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
-s3_bucket: <%= ENV['JEKYLL_ENV'] == 'production' ? 'liferefined.com' : 'liferefined.leviwilson.com' %>
+s3_bucket: <%= (ENV['JEKYLL_ENV'] == 'production' || ENV['TRAVIS_BRANCH'] == 'master') ? 'liferefined.com' : 'liferefined.leviwilson.com' %>
 gzip: true
 
 # set s3_token if using temporary credentials with a session token (eg: when assuming a role)

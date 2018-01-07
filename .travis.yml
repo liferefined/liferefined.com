@@ -1,0 +1,9 @@
+language: ruby
+cache: bundler
+script: bundle exec rake build
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: gem install s3_website && s3_website push
+  on:
+    all_branches: true
