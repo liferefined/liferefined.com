@@ -1,5 +1,7 @@
 require 'fileutils'
 
+task(:default) {}
+
 desc 'release to production'
 task :release do
   ENV['JEKYLL_ENV'] = 'production'
