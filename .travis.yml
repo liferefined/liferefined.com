@@ -4,4 +4,5 @@ deploy:
   provider: script
   skip_cleanup: true
   script: gem install s3_website && s3_website push
-  all_branches: true
+  on:
+    all_branches: true
