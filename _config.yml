@@ -19,6 +19,18 @@ description: Life Refined Chiropractic exists to radically reenergize our commun
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.liferefined.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      type: website
+  -
+    scope:
+      path: _posts
+    values:
+      type: article
+
 navigation:
 - text: Home
   url: /

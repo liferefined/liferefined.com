@@ -3,7 +3,6 @@
   {% capture og_image %}{% if page.post_image %}{{ page.post_image }}{% else %}{{ '/img/og_image.png' }}{% endif %}{% endcapture %}
   {% assign author = site.data.authors[page.author] %}
 
-
   {% if author %}<link rel="author" href="{{ author.url }}" />{% endif %}
 
   {% if description != "" %}
