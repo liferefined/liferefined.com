@@ -1,5 +1,5 @@
 language: ruby
-script: rake build
+script: bundle exec rake build
 deploy:
   provider: script
   skip_cleanup: true
