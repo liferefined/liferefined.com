@@ -1,6 +1,6 @@
 language: ruby
 cache: bundler
-install: bundle
+before_deploy: bundle
 deploy:
   - provider: script
     skip_cleanup: true
