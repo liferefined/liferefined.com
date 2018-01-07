@@ -5,8 +5,7 @@ deploy:
   - provider: script
     script: bundle exec rake stage
     on:
-      branch:
-        all_branches: true
+      all_branches: true
       condition: $TRAVIS_BRANCH != master
   - provider: script
     script: bundle exec rake release
