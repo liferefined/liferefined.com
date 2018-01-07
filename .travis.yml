@@ -1,15 +1,12 @@
 language: ruby
-cache: bundler
-before_deploy: bundle
+script: bundle
 deploy:
   - provider: script
-    skip_cleanup: true
     script: bundle exec rake stage
     on:
       all_branches: true
       condition: $TRAVIS_BRANCH != master
   - provider: script
-    skip_cleanup: true
     script: bundle exec rake release
     on:
       branch: master
