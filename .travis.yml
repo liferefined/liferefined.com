@@ -1,0 +1,4 @@
+install:
+  - bundle
+script:
+  - if [ "$TRAVIS_BRANCH" != "master" ]; then echo bundle exec rake stage; else echo bundle exec rake release; fi
