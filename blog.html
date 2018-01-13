@@ -34,7 +34,11 @@ post_image: /img/blog_md.jpg
       <img alt="{{ page.title }}" src="{{ post.post_image }}" class="post-theme">
     </div>
     {% endif %}
-    <p>{{ post.content | strip_html | truncatewords: 100 }} <a href="{{ post.url }}">Read more</a></p>
+    {% if post.youtube %}
+      {{ post.youtube | youtube: 'preview' }}
+    {% else %}
+      <p>{{ post.content | strip_html | truncatewords: 100 }} <a href="{{ post.url }}">Read more</a></p>
+    {% endif %}
   </div>
 {% endfor %}
 </section>
