@@ -22,7 +22,7 @@ post_image: /img/blog_md.jpg
     <h3>
       {% for a in post.author %}
       {% assign author = site.data.authors[a] %}
-      <a class="link-unstyled" href="{{ author.url }}">
+      <a class="link-unstyled" href="{{ author.url }}" target="_blank">
         <img class="profile profile-small" alt="{{ author.name }}" src="{{ author.photo }}">
       </a>
       {% endfor %}
