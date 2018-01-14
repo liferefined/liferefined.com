@@ -36,9 +36,8 @@ post_image: /img/blog_md.jpg
     {% endif %}
     {% if post.youtube %}
       {{ post.youtube | youtube: 'preview' }}
-    {% else %}
-      <p>{{ post.content | strip_html | truncatewords: 100 }} <a href="{{ post.url }}">Read more</a></p>
     {% endif %}
+    <p>{{ post.content | strip_html | truncatewords: 100 }} <a href="{{ post.url }}">Read more</a></p>
   </div>
 {% endfor %}
 </section>

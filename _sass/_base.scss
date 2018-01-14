@@ -22,10 +22,10 @@ hr.light {
   border-color: white;
 }
 
-.blog, .blog-preview {
+.blog-preview {
   iframe {
-    margin-top: 15px;
-    margin-left: 50px;
+    float: right;
+    margin-left: 15px;
   }
 }
 
