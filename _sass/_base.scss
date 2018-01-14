@@ -22,10 +22,33 @@ hr.light {
   border-color: white;
 }
 
+@media (min-width: $screen-sm) {
+  iframe {
+    width: 854px;
+    height: 480px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  iframe {
+    width: 427px;
+    height: 240px;
+    width: 100%;
+  }
+}
+
 .blog-preview {
   iframe {
     float: right;
     margin-left: 15px;
+  }
+
+  @media (max-width: $screen-sm) {
+    iframe {
+      margin: 0;
+      float: none;
+      width: 100%;
+    }
   }
 }
 

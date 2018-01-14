@@ -36,7 +36,7 @@ post_image: /img/blog_md.jpg
     </div>
     {% endif %}
     {% if post.youtube %}
-      {{ post.youtube | youtube: 'preview' }}
+      {{ post.youtube | youtube }}
     {% endif %}
     <p>{{ post.content | strip_html | truncatewords: 100 }} <a href="{{ post.url }}">Read more</a></p>
   </div>
