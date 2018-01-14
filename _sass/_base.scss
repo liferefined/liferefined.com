@@ -22,17 +22,20 @@ hr.light {
   border-color: white;
 }
 
+$youtube-width: 854px;
+$youtube-height: 480px;
+
 @media (min-width: $screen-sm) {
   iframe {
-    width: 854px;
-    height: 480px;
+    width: $youtube-width;
+    height: $youtube-height;
   }
 }
 
 @media (max-width: $screen-sm) {
   iframe {
-    width: 427px;
-    height: 240px;
+    width: $youtube-width / 2;
+    height: $youtube-height / 2;
     width: 100%;
   }
 }
@@ -41,6 +44,8 @@ hr.light {
   iframe {
     float: right;
     margin-left: 15px;
+    width: $youtube-width / 2;
+    height: $youtube-height / 2;
   }
 
   @media (max-width: $screen-sm) {
