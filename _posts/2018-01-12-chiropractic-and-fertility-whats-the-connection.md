@@ -1,6 +1,8 @@
 ---
 layout: post
-author: dr_staci
+author:
+  - dr_staci
+  - dr_nate
 title: Chiropractic and Fertility - What's the Connection?
 youtube: S9Ej6eLCdJ8
 ---

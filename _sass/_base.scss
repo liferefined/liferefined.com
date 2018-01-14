@@ -54,6 +54,19 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   @include sans-serif-font;
+
+  a {
+    color: black;
+  }
+
+  a:hover, a:focus, a:active {
+    color: black;
+    text-decoration-color: $theme-primary;
+  }
+}
+
+a.link-unstyled {
+  text-decoration: none;
 }
 
 a > h2, h3  {

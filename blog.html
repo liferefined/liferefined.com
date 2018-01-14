@@ -19,14 +19,15 @@ post_image: /img/blog_md.jpg
 <section class="copy blog-preview">
 {% for post in site.posts %}
   {% capture direction %}{% cycle 'right', 'right' %}{% endcapture %}
-  {% assign author = site.data.authors[post.author] %}
-
-  <a href="{{ post.url }}">
     <h3>
-      {% if author %}<img class="profile profile-small" alt="{{ author.name }}" src="{{ author.photo }}">{% endif %}
-      {{ post.title }}
+      {% for a in post.author %}
+      {% assign author = site.data.authors[a] %}
+      <a class="link-unstyled" href="{{ author.url }}">
+        <img class="profile profile-small" alt="{{ author.name }}" src="{{ author.photo }}">
+      </a>
+      {% endfor %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </h3>
-  </a>
   <em>{{ post.date | date: '%B %d, %Y' }}</em>
   <div class="clearfix text-justify">
     {% if post.post_image %}

@@ -7,7 +7,6 @@
 {% capture wrote_or_recorded %}{% if page.youtube %}recorded{% else %}wrote{% endif %}{% endcapture %}
 {{ navigation_slim | slimify }}
 
-{% assign author = site.data.authors[page.author] %}
 
 <body id="page-top">
   <header class="post">
@@ -20,11 +19,13 @@
   </header>
 
   <section class="copy blog">
-    {% if author %}
+    {% for a in page.author %}
+    {% assign author = site.data.authors[a] %}
     <img class="profile" alt="{{ author.name }}" src="{{ author.photo }}">
-    <a rel="author" href="{{ author.url }}" target="_blank">{{ author.name }}</a> {{ wrote_or_recorded }} this on
-    {% endif %}
-    {{ page.date | date: '%B %d, %Y' }} / <a href="/blog">Blog</a>
+    <a rel="author" href="{{ author.url }}" target="_blank">{{ author.name }}</a>
+    {% unless forloop.last %}&bull;{% endunless %}
+    {% endfor %}
+    {{ wrote_or_recorded }} this on {{ page.date | date: '%B %d, %Y' }} &bull; <a href="/blog">Blog</a>
     {% if page.post_image %}
     <img alt="{{ page.title }}" src="{{ page.post_image }}" class="post-theme">
     {% endif %}
