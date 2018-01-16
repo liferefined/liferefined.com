@@ -26,14 +26,14 @@ $youtube-width: 854px;
 $youtube-height: 480px;
 
 @media (min-width: $screen-sm) {
-  iframe {
+  iframe.youtube {
     width: $youtube-width;
     height: $youtube-height;
   }
 }
 
 @media (max-width: $screen-sm) {
-  iframe {
+  iframe.youtube {
     width: $youtube-width / 2;
     height: $youtube-height / 2;
     width: 100%;
@@ -41,7 +41,7 @@ $youtube-height: 480px;
 }
 
 .blog-preview {
-  iframe {
+  iframe.youtube {
     float: right;
     margin-left: 15px;
     width: $youtube-width / 2;
@@ -49,7 +49,7 @@ $youtube-height: 480px;
   }
 
   @media (max-width: $screen-sm) {
-    iframe {
+    iframe.youtube {
       margin: 0;
       float: none;
       width: 100%;
