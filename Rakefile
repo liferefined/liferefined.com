@@ -5,9 +5,9 @@ task default: [:build, :deploy]
 desc 'build the site'
 task :build do
   if production?
-    puts `jekyll build`
+    puts `JEKYLL_ENV=production jekyll build`
   else
-    puts `jekyll build --drafts`
+    puts `JEKYLL_ENV=production jekyll build --drafts`
     make_undiscoverable
   end
   puts `cat _site/robots.txt _site/sitemap.xml`

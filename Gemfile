@@ -17,6 +17,7 @@ gem 'jekyll-assets', group: :jekyll_plugins
 
 gem 'bootstrap-sass', '3.3.2'
 gem 'font-awesome-sass', '4.7.0'
+gem 'uglifier'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem 'minima', '~> 2.0'
