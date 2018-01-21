@@ -528,6 +528,15 @@ aside.footer {
   display: block;
   max-width: 650px;
   margin: 0 auto;
+
+  .btn {
+    position: absolute;
+    bottom: 5px;
+    width: 135px;
+    left: calc(50% - 135px / 2);
+    z-index: 3;
+  }
+
   .portfolio-box-caption {
     color: white;
     opacity: 0;
