@@ -35,8 +35,8 @@ section#about.bg-primary
       .col-md-12.text-center
         a.btn.btn-default.btn-xl href="/about" About Us
 
-.mailing-list data-ng-if="self.askToSubscribe" data-ng-controller="MailChimp as self"
-  a.close-window href="" aria-label="Close subscribe window"
+.mailing-list.ng-cloak data-ng-if="self.askToSubscribe" data-ng-controller="MailChimp as self"
+  a.close-window href="" aria-label="Close subscribe window" data-ng-click="self.close()"
     i.fa.fa-times-circle-o aria-hidden="true"
 
   h2.text-center Subscribe to our mailing list

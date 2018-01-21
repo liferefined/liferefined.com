@@ -6,6 +6,10 @@ body {
   font-weight: 300;
 }
 
+.ng-cloak {
+  display: none;
+}
+
 .offscreen {
   position: absolute;
   left: -5000px;

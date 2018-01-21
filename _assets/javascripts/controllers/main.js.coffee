@@ -1,6 +1,7 @@
 class Main
-  constructor: ($document, $timeout) ->
-    {alreadyAsked} = localStorage
-    $timeout (=> @askToSubscribe = true), 5000 unless alreadyAsked
+  constructor: ($scope, $cookies, $timeout) ->
+    alreadyAsked = -> $cookies.get('MCPopupClosed') is 'yes'
+    $timeout (=> @askToSubscribe = true), 5000 unless alreadyAsked()
+    $scope.$watch alreadyAsked, (didAsk, ___) => @askToSubscribe = false if didAsk
 
-angular.module('liferefined').controller('Main', ['$document', '$timeout', Main])
+angular.module('liferefined').controller('Main', ['$scope', '$cookies', '$timeout', Main])

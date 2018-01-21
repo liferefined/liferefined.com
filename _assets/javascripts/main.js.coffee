@@ -5,6 +5,6 @@
 #=require vendor/wow.min.js
 #=require vendor/creative.js
 #=require vendor/angular.min.js
-#=require vendor/angular-resource.min.js
+#=require vendor/angular-cookies.min.js
 #=require liferefined.js
 #=require_tree ./controllers

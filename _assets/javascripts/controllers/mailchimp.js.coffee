@@ -1,12 +1,15 @@
 class @MailChimp
-  {$http} = {}
+  {$http, $cookies} = {}
   Object.defineProperties @,
     BaseUrl: get: -> 'https://liferefined.us17.list-manage.com'
     Url: get: -> "#{MailChimp.BaseUrl}/subscribe/post-json"
 
-  constructor: (_$http) ->
+  constructor: (_$http, _$cookies) ->
     $http = _$http
+    $cookies = _$cookies
     @user = {}
+
+  close: -> $cookies.put('MCPopupClosed', 'yes')
 
   subscribe: ->
     params = {
@@ -16,6 +19,6 @@ class @MailChimp
       FNAME: @user.name
     }
 
-    $http.jsonp(MailChimp.Url, jsonpCallbackParam: 'c', params: params).then(log, log)
+    $http.jsonp(MailChimp.Url, jsonpCallbackParam: 'c', params: params).finally @close
 
-angular.module('liferefined').controller('MailChimp', ['$http', MailChimp])
+angular.module('liferefined').controller('MailChimp', ['$http', '$cookies', MailChimp])
