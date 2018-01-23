@@ -1,5 +1,8 @@
----
----
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,500');
+@import url('https://fonts.googleapis.com/css?family=Exo:300');
 
 @charset "utf-8";
 
@@ -39,8 +42,4 @@ $theme-dark: #222;
 $logo-peru: #C28441;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-"config",
-"mixins",
-"base"
-;
+@import "config", "mixins", "base";

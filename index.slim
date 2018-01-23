@@ -9,7 +9,8 @@ description: Life Refined Chiropractic exists to radically reenergize our commun
 header.landing
   .header-content
     .header-content-inner
-      img alt="Life Refined Chiropractic" class="logo" src="img/life_refined_inverse.svg"
+      h1 aria-label="Life Refined Chiropractic"
+        img alt="Life Refined Chiropractic" class="logo" src="img/life_refined_inverse.svg"
       hr
       p.lead Coming Soon! Opening January 2018
       a.btn.btn-primary.btn-xl.page-scroll href="#about" Find Out more
@@ -35,6 +36,31 @@ section#about.bg-primary
       .col-md-12.text-center
         a.btn.btn-default.btn-xl href="/about" About Us
 
+.mailing-list.ng-cloak data-ng-if="self.askToSubscribe" data-ng-controller="MailChimp as self"
+  a.close-window href="" aria-label="Close subscribe window" data-ng-click="self.close()"
+    i.fa.fa-times-circle-o aria-hidden="true"
+
+  h2.text-center Subscribe to our mailing list
+  hr
+  form.form name="mc" data-ng-submit="self.subscribe(mc)"
+    .form-group
+      label for="mce-EMAIL" Email Address
+      input.form-control {
+        id="mce-EMAIL" name="EMAIL" type="email"
+        data-ng-required="true" data-ng-model="self.user.email"
+      }
+    .form-group
+      label for="mce-FNAME" First Name
+      input.form-control id="mce-FNAME" name="FNAME" type="text" data-ng-model="self.user.name"
+
+    input.offscreen type="text" name="b_0a1361f21f1f3455468ee787e_9058c75a0e" value="" tabindex="-1"
+
+    input.btn.btn-primary.form-control {
+      type="submit" value="Subscribe" name="subscribe"
+      id="mc-embedded-subscribe"
+      data-ng-disabled="mc.$invalid"
+    }
+
 section.flex.text-center
   .full
     h2.section-heading Quick Links
@@ -43,7 +69,6 @@ section.flex.text-center
   .service-box
     i.fa.fa-4x.fa-calendar.wow.bounceIn.text-primary
     h3 Appointments
-    a.btn.btn-primary.btn-xl href="#" target="_blank" Schedule
 
   .service-box
     i.fa.fa-4x.fa-leaf.wow.bounceIn.text-primary
@@ -52,12 +77,10 @@ section.flex.text-center
         span.green emerson
         | wellevate
         sup SM
-    a.btn.btn-primary.btn-xl href="https://wellevate.me/staci-blume/" target="_blank" Order
 
   .service-box
     i.fa.fa-4x.fa-wpforms.wow.bounceIn.text-primary data-wow-delay=".1s"
     h3 New Patient Forms
-    a.btn.btn-primary.btn-xl href="/contact#new-patient-forms" Fill Out
 
 {% include portfolio.slim %}
 

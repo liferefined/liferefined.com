@@ -6,6 +6,15 @@ body {
   font-weight: 300;
 }
 
+.ng-cloak {
+  display: none;
+}
+
+.offscreen {
+  position: absolute;
+  left: -5000px;
+}
+
 body {
   > :not(header):not(nav):not(section):not(aside) {
     margin: 0 25px;
@@ -24,6 +33,37 @@ hr.light {
 
 $youtube-width: 854px;
 $youtube-height: 480px;
+
+.mailing-list {
+  position: fixed;
+  bottom: 25px;
+  width: 35vw;
+  right: 0;
+  padding: 0 25px 50px 25px;
+  background-color: white;
+  z-index: 5;
+  border-radius: 15px;
+  box-shadow: 0px 0px 13px  rgba(0,0,0,0.3);
+
+  @media (max-width: $screen-sm) {
+    width: 100%;
+    bottom: 2vh;
+    right: unset;
+    margin: 0 auto;
+    padding: 25px;
+  }
+
+  a.close-window {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 3rem;
+  }
+
+  label {
+    font-weight: 400;
+  }
+}
 
 @media (min-width: $screen-sm) {
   iframe.youtube {
@@ -488,6 +528,15 @@ aside.footer {
   display: block;
   max-width: 650px;
   margin: 0 auto;
+
+  .btn {
+    position: absolute;
+    bottom: 5px;
+    width: 135px;
+    left: calc(50% - 135px / 2);
+    z-index: 3;
+  }
+
   .portfolio-box-caption {
     color: white;
     opacity: 0;

@@ -1,0 +1,10 @@
+#=require vendor/jquery.js
+#=require vendor/jquery.easing.min.js
+#=require vendor/jquery.fittext.js
+#=require vendor/bootstrap.min.js
+#=require vendor/wow.min.js
+#=require vendor/creative.js
+#=require vendor/angular.min.js
+#=require vendor/angular-cookies.min.js
+#=require liferefined.js
+#=require_tree ./controllers
