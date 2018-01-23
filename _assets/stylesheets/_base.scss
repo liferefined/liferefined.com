@@ -154,6 +154,26 @@ ul.flex {
   flex-flow: row wrap;
   justify-content: space-around;
 
+  &.no-style {
+    list-style: none;
+
+    @media (max-width: $screen-sm) {
+      li {
+        width: 33%;
+      }
+    }
+
+    @media (max-width: $screen-xs) {
+      min-height: 25vh;
+      padding: 0;
+      margin: 0;
+
+      li {
+        width: 100%;
+      }
+    }
+  }
+
   li {
     font-size: 18px;
     width: 33%;
