@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="liferefined">
 
 {% include head.html %}
 
@@ -8,7 +8,7 @@
 {{ navigation_slim | slimify }}
 
 
-<body id="page-top">
+<body id="page-top" data-ng-controller="MailChimp as self">
   <header class="post">
     <div class="header-content">
       <div class="header-content-inner text-center">

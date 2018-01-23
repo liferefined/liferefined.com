@@ -36,31 +36,6 @@ section#about.bg-primary
       .col-md-12.text-center
         a.btn.btn-default.btn-xl href="/about" About Us
 
-.mailing-list.ng-cloak data-ng-if="self.askToSubscribe" data-ng-controller="MailChimp as self"
-  a.close-window href="" aria-label="Close subscribe window" data-ng-click="self.close()"
-    i.fa.fa-times-circle-o aria-hidden="true"
-
-  h2.text-center Subscribe to our mailing list
-  hr
-  form.form name="mc" data-ng-submit="self.subscribe(mc)"
-    .form-group
-      label for="mce-EMAIL" Email Address
-      input.form-control {
-        id="mce-EMAIL" name="EMAIL" type="email"
-        data-ng-required="true" data-ng-model="self.user.email"
-      }
-    .form-group
-      label for="mce-FNAME" First Name
-      input.form-control id="mce-FNAME" name="FNAME" type="text" data-ng-model="self.user.name"
-
-    input.offscreen type="text" name="b_0a1361f21f1f3455468ee787e_9058c75a0e" value="" tabindex="-1"
-
-    input.btn.btn-primary.form-control {
-      type="submit" value="Subscribe" name="subscribe"
-      id="mc-embedded-subscribe"
-      data-ng-disabled="mc.$invalid"
-    }
-
 section.flex.text-center
   .full
     h2.section-heading Quick Links

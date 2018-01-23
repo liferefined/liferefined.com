@@ -1,4 +1,20 @@
+<aside class="bg-primary text-center">
+  <form name="inlineSubscribe" data-ng-submit="self.subscribe()">
+    <div class="form-group form-inline">
+      <h2 class="section-heading">
+        Email Newsletter
+        <input type="email" class="form-control" data-ng-model="self.inline.email" data-ng-disabled="self.askToSubscribe" required>
+        <button class="btn btn-default" type="submit" data-ng-disabled="inlineSubscribe.$invalid">
+          Subscribe
+          <i class="fa fa-envelope-o"></i>
+        </button>
+      </h2>
+    </div>
+  </form>
+</aside>
 <aside class="footer bg-dark text-center">
+  {% capture mailing_list_slim %}{% include mailing_list.slim %}{% endcapture %}
+  {{ mailing_list_slim | slimify }}
   <a href="https://www.facebook.com/liferefinedchiro">
     <span class="sr-only">Life Refined Chiropractic Facebook Page</span>
     <span class="fa-stack">
