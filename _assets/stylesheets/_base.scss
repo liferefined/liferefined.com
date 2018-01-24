@@ -124,6 +124,18 @@ a {
   }
 }
 
+.bg-dark {
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      color: white;
+    }
+
+    a:hover, a:focus, a:active {
+      color: white;
+    }
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   @include sans-serif-font;
@@ -216,6 +228,11 @@ section {
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid $theme-primary;
+
+    &.small {
+      width: $circle-size / 2;
+      height: $circle-size / 2;
+    }
 
     @media (max-width: $screen-sm) {
       width: $circle-size / 2;
@@ -350,8 +367,6 @@ section.flex {
   justify-content: space-around;
 
   >* {
-    width: 33%;
-
     @media (max-width: $screen-xs) {
       width: 100%;
     }
