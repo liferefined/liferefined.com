@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="liferefined">
+
+{% include head.html %}
+
+<body id="page-top" data-ng-controller="MailChimp as self">
+  {% capture nav_slim %}{% include nav.slim %}{% endcapture %}
+  {{ nav_slim | slimify }}
+  <header class="location">
+    <div class="header-content">
+      <div class="header-content-inner text-center">
+        <h1>{{ page.title }}</h1>
+        <hr>
+      </div>
+    </div>
+  </header>
+
+  <section class="copy bg-primary container-fluid">
+    <div class="col-md-12">
+      {{ content }}
+      <div class="col-md-5">
+        <form class="form">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input id="first-name" class="form-control" type="text" data-ng-model="full.firstName">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" class="form-control" type="text" data-ng-model="full.lastName">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" class="form-control" type="email" data-ng-model="full.email" required>
+          </div>
+          <div class="form-group">
+            <label for="description">How can we get you to your 100%?</label>
+            <textarea class="form-control" rows="5" data-ng-model="full.description"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7">
+        <iframe src="{{ page.directions }}" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>
+
