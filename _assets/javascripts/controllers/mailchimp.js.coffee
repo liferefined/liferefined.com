@@ -10,25 +10,21 @@ class @MailChimp
     $timeout = _$timeout
 
     $timeout (=> @askToSubscribe = true), 5000 unless $cookies.get('MCPopupClosed') is 'yes'
+    @user = {}
 
-    reset = =>
-      @user = {}
-      @inline = {}
-
-    reset()
-
-  close: ->
+  close: =>
     $cookies.put('MCPopupClosed', 'yes')
     @askToSubscribe = false
-    reset()
+    @user = {}
 
   subscribe: ->
-    whom = if @user.email then @user else @inline
     params = {
       u: '0a1361f21f1f3455468ee787e'
       id: '9058c75a0e'
-      EMAIL: whom.email
-      FNAME: whom.name
+      EMAIL: @user.email
+      FNAME: @user.firstName
+      LNAME: @user.lastName
+      REASON: @user.reason
     }
 
     $http.jsonp(MailChimp.Url, jsonpCallbackParam: 'c', params: params).finally @close
