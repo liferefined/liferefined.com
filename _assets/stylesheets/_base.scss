@@ -21,6 +21,19 @@ body {
   }
 }
 
+table {
+  text-align: left;
+
+  thead {
+    tr {
+      th {
+        font-weight: 400;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
 hr {
   border-color: $theme-primary;
   border-width: 3px;
