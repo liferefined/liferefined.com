@@ -1,0 +1,12 @@
+<aside class="bg-primary text-center">
+  <form name="inlineSubscribe" data-ng-submit="self.subscribe()">
+    <div class="form-group form-inline">
+      <label>Email Newsletter</label>
+      <input type="email" class="form-control" data-ng-model="self.user.email" data-ng-disabled="self.askToSubscribe" required>
+      <button class="btn btn-default" type="submit" data-ng-disabled="inlineSubscribe.$invalid">
+        Subscribe
+        <i class="fa fa-envelope-o"></i>
+      </button>
+    </div>
+  </form>
+</aside>

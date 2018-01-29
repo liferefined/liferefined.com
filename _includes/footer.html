@@ -1,17 +1,3 @@
-<aside class="bg-primary text-center">
-  <form name="inlineSubscribe" data-ng-submit="self.subscribe()">
-    <div class="form-group form-inline">
-      <h2 class="section-heading">
-        Email Newsletter
-        <input type="email" class="form-control" data-ng-model="self.inline.email" data-ng-disabled="self.askToSubscribe" required>
-        <button class="btn btn-default" type="submit" data-ng-disabled="inlineSubscribe.$invalid">
-          Subscribe
-          <i class="fa fa-envelope-o"></i>
-        </button>
-      </h2>
-    </div>
-  </form>
-</aside>
 <aside class="footer bg-dark text-center">
   {% capture mailing_list_slim %}{% include mailing_list.slim %}{% endcapture %}
   {{ mailing_list_slim | slimify }}
@@ -38,4 +24,24 @@
   </a>
   <br>
   <small>Life Refined Chiropractic &bull; 14297 Bergen Boulevard Suite 100 &bull; Noblesville, IN 46060 &bull; 317-674-8857</small>
+  <br>
+  <small>
+    <a href="/hamiltontowncenter/">Hamilton Town Center</a>
+    &bull;
+    <a href="/noblesville/">Noblesville</a>
+    &bull;
+    <a href="/fishers/">Fishers</a>
+    &bull;
+    <a href="/mccordsville/">McCordsville</a>
+    &bull;
+    <a href="/fortville/">Fortville</a>
+    &bull;
+    <a href="/carmel/">Carmel</a>
+    &bull;
+    <a href="/woodbury/">Woodbury</a>
+    &bull;
+    <a href="/saxony/">Saxony</a>
+    &bull;
+    <a href="/geist/">Geist</a>
+  </small>
 </aside>

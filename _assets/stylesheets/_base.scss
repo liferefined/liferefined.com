@@ -21,6 +21,19 @@ body {
   }
 }
 
+table {
+  text-align: left;
+
+  thead {
+    tr {
+      th {
+        font-weight: 400;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
 hr {
   border-color: $theme-primary;
   border-width: 3px;
@@ -61,10 +74,13 @@ $youtube-height: 480px;
     top: 5px;
     font-size: 3rem;
   }
+}
 
-  label {
-    font-weight: 400;
-  }
+label {
+  font-weight: 300;
+  @include sans-serif-font;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 @media (min-width: $screen-sm) {
@@ -118,6 +134,18 @@ a {
   &:hover,
   &:focus {
     color: darken($theme-primary, 10%);
+  }
+}
+
+.bg-dark {
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      color: white;
+    }
+
+    a:hover, a:focus, a:active {
+      color: white;
+    }
   }
 }
 
@@ -213,6 +241,11 @@ section {
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid $theme-primary;
+
+    &.small {
+      width: $circle-size / 2;
+      height: $circle-size / 2;
+    }
 
     @media (max-width: $screen-sm) {
       width: $circle-size / 2;
@@ -347,8 +380,6 @@ section.flex {
   justify-content: space-around;
 
   >* {
-    width: 33%;
-
     @media (max-width: $screen-xs) {
       width: 100%;
     }
@@ -513,6 +544,7 @@ header {
   @include header('meet-us', 'medium', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg', top);
   @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
   @include header('post', 'small', 'blog.jpg', 'blog_md.jpg');
+  @include header('location', 'micro', 'back_gaze.jpg', 'back_gaze_md.jpg');
 }
 
 aside.footer {
