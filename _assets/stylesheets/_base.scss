@@ -15,6 +15,30 @@ body {
   left: -5000px;
 }
 
+.social-anchor {
+  text-align: center;
+  font-size: 2.5rem;
+  position: fixed;
+  right: 15px;
+  top: 75px;
+
+  @media (max-width: $screen-xs) {
+    top: unset;
+    bottom: 5px;
+  }
+}
+
+.affix {
+  @media (min-width: $screen-xs) {
+    .social-anchor {
+      font-size: 2rem;
+      top: 0.8rem;
+      width: 150px;
+      left: calc(50% - 75px);
+    }
+  }
+}
+
 body {
   > :not(header):not(nav):not(section):not(aside) {
     margin: 0 25px;
