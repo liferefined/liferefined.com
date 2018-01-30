@@ -177,6 +177,12 @@ p {
   margin-bottom: 20px;
 }
 
+ul {
+  li {
+    font-size: 18px;
+  }
+}
+
 ul.flex {
   display: flex;
   flex-flow: row wrap;
@@ -203,7 +209,6 @@ ul.flex {
   }
 
   li {
-    font-size: 18px;
     width: 33%;
 
     @media (max-width: $screen-sm) {
