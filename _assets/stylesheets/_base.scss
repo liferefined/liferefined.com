@@ -15,6 +15,30 @@ body {
   left: -5000px;
 }
 
+.social-anchor {
+  text-align: center;
+  font-size: 2.5rem;
+  position: fixed;
+  right: 15px;
+  top: 75px;
+
+  @media (max-width: $screen-xs) {
+    top: unset;
+    bottom: 5px;
+  }
+}
+
+.affix {
+  @media (min-width: $screen-xs) {
+    .social-anchor {
+      font-size: 2rem;
+      top: 0.8rem;
+      width: 150px;
+      left: calc(50% - 75px);
+    }
+  }
+}
+
 body {
   > :not(header):not(nav):not(section):not(aside) {
     margin: 0 25px;
@@ -167,7 +191,7 @@ a.link-unstyled {
   text-decoration: none;
 }
 
-a > h2, h3  {
+a > h2, a > h3  {
   color: black;
 }
 
@@ -175,6 +199,12 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+ul {
+  li {
+    font-size: 18px;
+  }
 }
 
 ul.flex {
@@ -203,7 +233,6 @@ ul.flex {
   }
 
   li {
-    font-size: 18px;
     width: 33%;
 
     @media (max-width: $screen-sm) {
@@ -344,8 +373,10 @@ section {
   }
 
   @include section-image('back-girl', 'back_girl.jpg', 'back_girl_md.jpg');
+  @include section-image('kids', 'back_kids.jpg', 'back_kids_md.jpg');
   @include section-image('pregnancy', 'pregnancy.jpg', 'pregnancy_md.jpg');
   @include section-image('massage', 'massage.jpg', 'massage_md.jpg');
+  @include section-image('get-swoll', 'get_swoll.jpg', 'get_swoll_md.jpg');
 
   .carousel {
     .carousel-control {
@@ -540,6 +571,7 @@ header {
 
   @include header('landing', 'large', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
+  @include header('adult', 'small', 'adult_services.jpg', 'adult_services_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
   @include header('meet-us', 'medium', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg', top);
   @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
@@ -673,6 +705,7 @@ aside.footer {
   border-radius: 300px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 15px;
 }
 
 .btn-xl {
