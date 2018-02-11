@@ -40,6 +40,8 @@ navigation:
   url: /services/
 - text: Blog
   url: /blog/
+- text: Events
+  url: https://www.facebook.com/pg/liferefinedchiro/events
 - text: Meet Us
   url: /meet-us/
 - text: Contact
