@@ -32,25 +32,21 @@
     hr
     p.text-center Looking for easy ways to improve your family's health?
     form.form name="mc" data-ng-submit="self.subscribe()"
-      .row
-        .col-md-6
-          img.img-responsive.center-block src="/img/10_simple_steps.jpg"
-        .col-md-6
-            .form-group
-              label for="mce-EMAIL" Email Address
-              input.form-control {
-                id="mce-EMAIL" name="EMAIL" type="email"
-                data-ng-required="true" data-ng-model="self.user.email"
-              }
-            .form-group
-              label for="mce-FNAME" First Name
-              input.form-control id="mce-FNAME" name="FNAME" type="text" data-ng-model="self.user.firstName"
+      img.img-responsive.center-block width="75%" src="/img/10_simple_steps.jpg"
+      .form-group
+        label for="mce-EMAIL" Email Address
+        input.form-control {
+          id="mce-EMAIL" name="EMAIL" type="email"
+          data-ng-required="true" data-ng-model="self.user.email"
+        }
+      .form-group
+        label for="mce-FNAME" First Name
+        input.form-control id="mce-FNAME" name="FNAME" type="text" data-ng-model="self.user.firstName"
 
-            input.offscreen type="text" name="b_0a1361f21f1f3455468ee787e_9058c75a0e" value="" tabindex="-1"
+      input.offscreen type="text" name="b_0a1361f21f1f3455468ee787e_9058c75a0e" value="" tabindex="-1"
 
-        .col-md-12
-          input.btn.btn-primary.form-control {
-            type="submit" value="Please send me the 10 ideas!" name="subscribe"
-            id="mc-embedded-subscribe"
-            data-ng-disabled="mc.$invalid"
-          }
+      input.btn.btn-primary.form-control {
+        type="submit" value="Please send me the 10 ideas!" name="subscribe"
+        id="mc-embedded-subscribe"
+        data-ng-disabled="mc.$invalid"
+      }
