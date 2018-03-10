@@ -14,6 +14,7 @@ class @MailChimp
       url: 'https://liferefined.us17.list-manage.com'
     ten_steps:
       id: 'de720c6006'
+      ignore: 'campaigns/ten-simple-steps'
       cookie: 'MCTenSteps'
       name: 'ten_steps'
       url: 'https://mc.us17.list-manage.com'
@@ -21,14 +22,17 @@ class @MailChimp
 
   Current = Campaigns.ten_steps
 
-  constructor: (_$http, _$cookies, _$timeout) ->
+  constructor: (_$http, _$cookies, _$timeout, $location) ->
     $http = _$http
     $cookies = _$cookies
     $timeout = _$timeout
 
+    shouldAsk = ->
+      $location.absUrl().indexOf(Current.ignore) is -1 and $cookies.get(Current.cookie) isnt 'yes'
+
     @campaign = Current.name
 
-    $timeout (=> @askToSubscribe = true), 5000 unless $cookies.get(Current.cookie) is 'yes'
+    $timeout (=> @askToSubscribe = true), 5000 if shouldAsk()
     @user = {}
 
   close: =>
@@ -49,4 +53,4 @@ class @MailChimp
   enrollIn: (list) -> @enroll Campaigns[list]
   subscribe: -> @enroll Current
 
-angular.module('liferefined').controller('MailChimp', ['$http', '$cookies', '$timeout', MailChimp])
+angular.module('liferefined').controller('MailChimp', ['$http', '$cookies', '$timeout', '$location', MailChimp])
