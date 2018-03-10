@@ -1,7 +1,9 @@
 class @MailChimp
   {$http, $cookies, $timeout, reset} = {}
   Object.defineProperties @,
+    Id: get: -> '0a1361f21f1f3455468ee787e'
     BaseUrl: get: -> Current.url
+    MailingLists: get: -> url for k, {url} of Campaigns
     Url: get: -> "#{MailChimp.BaseUrl}/subscribe/post-json"
 
   Campaigns = {
@@ -32,9 +34,14 @@ class @MailChimp
     @askToSubscribe = false
     @user = {}
 
-  subscribe: (list) ->
+  inlineSubscribe: ->
+    params = id: Campaigns.default.id, u: MailChimp.Id, EMAIL: @user.email
+    $http.jsonp("#{Campaigns.default.url}/subscribe/post-json", jsonpCallbackParam: 'c', params: params)
+      .finally @close
+
+  subscribe: ->
     params = {
-      id: Current.id, u: '0a1361f21f1f3455468ee787e'
+      id: Current.id, u: MailChimp.Id,
       EMAIL: @user.email
       FNAME: @user.firstName
       LNAME: @user.lastName

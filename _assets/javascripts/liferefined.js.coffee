@@ -1,4 +1,6 @@
 angular.module('liferefined', ['ngCookies'])
   .config(['$sceDelegateProvider', ($sceDelegateProvider) ->
-    $sceDelegateProvider.resourceUrlWhitelist ['self', "#{MailChimp.BaseUrl}/**"]
+    urls = ['self']
+    urls.push "#{url}/**" for url in MailChimp.MailingLists
+    $sceDelegateProvider.resourceUrlWhitelist urls
   ])
