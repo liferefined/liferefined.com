@@ -71,6 +71,12 @@ hr.light {
 $youtube-width: 854px;
 $youtube-height: 480px;
 
+.form {
+  .btn {
+    margin: 15px 0;
+  }
+}
+
 .mailing-list {
   text-align: left;
   color: black;
@@ -84,12 +90,6 @@ $youtube-height: 480px;
   border-radius: 15px;
   box-shadow: 0px 0px 13px  rgba(0,0,0,0.3);
   max-height: 95vh;
-
-  .form {
-    .btn {
-      margin: 15px 0;
-    }
-  }
 
   @media (max-width: $screen-sm) {
     width: 100%;
@@ -598,6 +598,7 @@ header {
   @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('adult', 'small', 'adult_services.jpg', 'adult_services_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
+  @include header('ten-steps', 'micro', 'back_kids.jpg', 'back_kids_md.jpg');
   @include header('meet-us', 'medium', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg', top);
   @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
   @include header('post', 'small', 'blog.jpg', 'blog_md.jpg');

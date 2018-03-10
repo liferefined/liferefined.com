@@ -1,3 +1,4 @@
+{% if page.inline_subscribe != 'hide' %}
 <aside class="bg-primary text-center">
   <form name="inlineSubscribe" data-ng-submit="self.inlineSubscribe()">
     <div class="form-group form-inline">
@@ -10,3 +11,4 @@
     </div>
   </form>
 </aside>
+{% endif %}

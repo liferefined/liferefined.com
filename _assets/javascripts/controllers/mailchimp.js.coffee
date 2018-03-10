@@ -36,20 +36,17 @@ class @MailChimp
     @askToSubscribe = false
     @user = {}
 
-  inlineSubscribe: ->
-    params = id: Campaigns.default.id, u: MailChimp.Id, EMAIL: @user.email
-    $http.jsonp("#{Campaigns.default.url}/subscribe/post-json", jsonpCallbackParam: 'c', params: params)
-      .finally @close
-
-  subscribe: ->
+  enroll: ({id, url}) ->
     params = {
-      id: Current.id, u: MailChimp.Id,
-      EMAIL: @user.email
-      FNAME: @user.firstName
-      LNAME: @user.lastName
-      REASON: @user.reason
+      id: id, u: MailChimp.Id,
+      EMAIL: @user.email, FNAME: @user.firstName, LNAME: @user.lastName, REASON: @user.reason
     }
 
-    $http.jsonp(MailChimp.Url, jsonpCallbackParam: 'c', params: params).finally @close
+    $http.jsonp("#{url}/subscribe/post-json", jsonpCallbackParam: 'c', params: params)
+      .finally @close
+
+  inlineSubscribe: -> @enroll id: Campaigns.default.id, url: Campaigns.default.url
+  enrollIn: (list) -> @enroll Campaigns[list]
+  subscribe: -> @enroll Current
 
 angular.module('liferefined').controller('MailChimp', ['$http', '$cookies', '$timeout', MailChimp])
