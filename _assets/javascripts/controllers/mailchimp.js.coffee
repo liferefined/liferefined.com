@@ -26,6 +26,8 @@ class @MailChimp
     $cookies = _$cookies
     $timeout = _$timeout
 
+    @campaign = Current.name
+
     $timeout (=> @askToSubscribe = true), 5000 unless $cookies.get(Current.cookie) is 'yes'
     @user = {}
 

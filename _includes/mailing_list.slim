@@ -1,29 +1,56 @@
-.mailing-list.ng-cloak data-ng-if="self.askToSubscribe"
+.mailing-list.ng-cloak data-ng-if="self.askToSubscribe" data-ng-switch="self.campaign"
   a.close-window href="" aria-label="Close subscribe window" data-ng-click="self.close()"
     i.fa.fa-times-circle-o aria-hidden="true"
 
-  .default-campaign data-ng-if="self.campaign == 'default'"
-  h2.text-center Subscribe to our mailing list
-  hr
-  form.form name="mc" data-ng-submit="self.subscribe()"
-    .form-group
-      label for="mce-EMAIL" Email Address
-      input.form-control {
-        id="mce-EMAIL" name="EMAIL" type="email"
-        data-ng-required="true" data-ng-model="self.user.email"
+  .default-campaign data-ng-switch-when="default"
+    h2.text-center Subscribe to our mailing list
+    hr
+    form.form name="mc" data-ng-submit="self.subscribe()"
+      .form-group
+        label for="mce-EMAIL" Email Address
+        input.form-control {
+          id="mce-EMAIL" name="EMAIL" type="email"
+          data-ng-required="true" data-ng-model="self.user.email"
+        }
+      .form-group
+        label for="mce-FNAME" First Name
+        input.form-control id="mce-FNAME" name="FNAME" type="text" data-ng-model="self.user.firstName"
+
+      .form-group
+        label for="mce-LNAME" Last Name
+        input.form-control id="mce-LNAME" name="LNAME" type="text" data-ng-model="self.user.lastName"
+
+      input.offscreen type="text" name="b_0a1361f21f1f3455468ee787e_9058c75a0e" value="" tabindex="-1"
+
+      input.btn.btn-primary.form-control {
+        type="submit" value="Subscribe" name="subscribe"
+        id="mc-embedded-subscribe"
+        data-ng-disabled="mc.$invalid"
       }
-    .form-group
-      label for="mce-FNAME" First Name
-      input.form-control id="mce-FNAME" name="FNAME" type="text" data-ng-model="self.user.firstName"
 
-    .form-group
-      label for="mce-LNAME" Last Name
-      input.form-control id="mce-LNAME" name="LNAME" type="text" data-ng-model="self.user.lastName"
+  .default-campaign data-ng-switch-when="ten_steps"
+    hr
+    p.text-center Looking for easy ways to improve your family's health?
+    form.form name="mc" data-ng-submit="self.subscribe()"
+      .row
+        .col-md-6
+          img.img-responsive.center-block src="/img/10_simple_steps.jpg"
+        .col-md-6
+            .form-group
+              label for="mce-EMAIL" Email Address
+              input.form-control {
+                id="mce-EMAIL" name="EMAIL" type="email"
+                data-ng-required="true" data-ng-model="self.user.email"
+              }
+            .form-group
+              label for="mce-FNAME" First Name
+              input.form-control id="mce-FNAME" name="FNAME" type="text" data-ng-model="self.user.firstName"
 
-    input.offscreen type="text" name="b_0a1361f21f1f3455468ee787e_9058c75a0e" value="" tabindex="-1"
+            input.offscreen type="text" name="b_0a1361f21f1f3455468ee787e_9058c75a0e" value="" tabindex="-1"
 
-    input.btn.btn-primary.form-control {
-      type="submit" value="Subscribe" name="subscribe"
-      id="mc-embedded-subscribe"
-      data-ng-disabled="mc.$invalid"
-    }
+        .col-md-12
+          input.btn.btn-primary.form-control {
+            type="submit" value="Please send me the 10 ideas!" name="subscribe"
+            id="mc-embedded-subscribe"
+            data-ng-disabled="mc.$invalid"
+          }
