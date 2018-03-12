@@ -71,6 +71,12 @@ hr.light {
 $youtube-width: 854px;
 $youtube-height: 480px;
 
+.form {
+  .btn {
+    margin: 15px 0;
+  }
+}
+
 .mailing-list {
   text-align: left;
   color: black;
@@ -80,9 +86,10 @@ $youtube-height: 480px;
   right: 0;
   padding: 0 25px 50px 25px;
   background-color: white;
-  z-index: 5;
+  z-index: 1040;
   border-radius: 15px;
   box-shadow: 0px 0px 13px  rgba(0,0,0,0.3);
+  max-height: 95vh;
 
   @media (max-width: $screen-sm) {
     width: 100%;
@@ -90,6 +97,24 @@ $youtube-height: 480px;
     right: unset;
     margin: 0 auto;
     padding: 25px;
+
+    overflow: scroll;
+
+    h2 {
+      font-size: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form {
+      .form-group {
+        margin: 0;
+      }
+
+      .btn {
+        font-weight: 300;
+      }
+    }
   }
 
   a.close-window {
@@ -290,13 +315,9 @@ section {
     }
 
     > img {
-      width: auto;
+      width: 100%;
       height: 100%;
-      margin-left: -$circle-size / 4;
-
-      @media (max-width: $screen-sm) {
-        margin-left: -$circle-size / 8;
-      }
+      object-fit: cover;
     }
   }
 
@@ -573,6 +594,7 @@ header {
   @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('adult', 'small', 'adult_services.jpg', 'adult_services_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
+  @include header('ten-steps', 'micro', 'back_kids.jpg', 'back_kids_md.jpg');
   @include header('meet-us', 'medium', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg', top);
   @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
   @include header('post', 'small', 'blog.jpg', 'blog_md.jpg');
