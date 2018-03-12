@@ -317,10 +317,10 @@ section {
     > img {
       width: auto;
       height: 100%;
-      margin-left: -$circle-size / 4;
+      // margin-left: -$circle-size / 4;
 
       @media (max-width: $screen-sm) {
-        margin-left: -$circle-size / 8;
+        // margin-left: -$circle-size / 8;
       }
     }
   }
