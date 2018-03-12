@@ -77,7 +77,7 @@
          "@type":"WebPage",
          "@id":"{{ site.url }}{{ page.url }}"
       },
-      "articleBody":"{{ page.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+      "articleBody":"{{ page.content | replace:'“','"' | replace:'”','"' | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
     }
   </script>
 
