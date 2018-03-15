@@ -2,6 +2,7 @@
 layout: post
 author: dr_nate
 title: We Let It ALL Go
+keywords: Lakeshore Chiropractic, starting over, new beginnings, business success
 post_image: /assets/posts/images/we-let-it-all-go.jpg
 ---
 Look, I’m not going to tell you this is easier a second time around, but I am in a much better position
