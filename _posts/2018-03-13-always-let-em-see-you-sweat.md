@@ -2,6 +2,7 @@
 layout: post
 author: sarah_harding
 title: Always Let Em See You Sweat
+keywords: Crossfit, Crossfit Three Kings, Noblesville, partner workout, chiropractic, Hamilton town center, fishers, geist
 post_image: /assets/posts/images/always-let-em-see-you-sweat.jpg
 ---
 For much of my adult life, I have had a passion and interest in fitness. Now don’t get me wrong, I am no
