@@ -2,6 +2,7 @@
 layout: post
 author: dr_nate
 title: I'm the Least Lucky Guy You Know
+keywords: brothers, healthy food for kids, role model, kids nutrition, nsng, no sugar no grain, grainfree kids, lucky guy
 post_image: /assets/posts/images/im-the-least-lucky-guy-you-know.jpg
 ---
 Trent is 3 years and a few months old now, the same age that I was when Cole was born. Drake is just over a year old and, often to Trent’s dismay, wants to emulate everything his older brother does. We were discussing this fact over the weekend with another family, who had similar aged children, which we met on one of our Labor Day Weekend adventures - this one to the Train Museum in Noblesville. The other mother says “when Lee (her older boy) wants water, the younger wants water too. And that’s alright until Lee is eating something that Ryan shouldn’t be having like candy.” Curious to see what Trent’s response was, I asked him, “Trent, what do you eat that Drake cannot have?” His reply was succinct and complete as if he’d rehearsed it, “pistachios, almonds, pineapple, broccoli and humus and whole grapes.” The other mother instantly said to us “you’re so lucky, Lee won’t eat hardly any of those things.” It is this concept of **_luck_** that has always disgusted me. To think that you can mindlessly go through life hoping that things turn out favorably is equivalent to getting in your car with no luggage, no maps and a broken fuel gauge in hope that you end up in Orlando for your Disney vacation.
