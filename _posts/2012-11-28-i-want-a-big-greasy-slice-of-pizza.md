@@ -2,6 +2,7 @@
 layout: post
 author: dr_nate
 title: I Want a Big Greasy Slice of Pizza
+keywords: healthy pizza, healthy family, sick kids, no sugar no grain, nsng
 post_image: /assets/posts/images/i-want-a-big-greasy-slice-of-pizza.jpg
 ---
 That’s certainly not something that you would expect to hear from my mouth regardless of the occasion. But last week, I found myself with a knitted brow and confused as to why I was having these cravings. For 12 consecutive days I found my bedtime matching the boys, around 8pm and sleeping until 6am instead of getting up for my usual 5am workout. Each day at lunch, I would needed a solid 60 minute power nap, unheard of for someone who typically needs complete refreshment from a 15-20 afternoon snooze. Who was this guy and what had he done with Dr. Awesome? As it turns out I was having a significant health expression and my body’s ability to adapt to environmental stressors had been shrunk to nearly nothing. But why was pizza on my mind?
