@@ -2,6 +2,7 @@
 layout: post
 author: dr_nate
 title: The Holiday Bug
+keywords: sick kids, healthy family, flu bug, chiropractic, Hamilton Town Center, Fishers, geist, noblesville
 post_image: /assets/posts/images/the-holiday-bug.jpg
 ---
 > "I desired to know why one person was ailing and his associate, eating at the same table, working in the same shop, at the same bench was not. Why? What difference was there in these two persons that caused one to have various diseases, while his partner escaped?"
