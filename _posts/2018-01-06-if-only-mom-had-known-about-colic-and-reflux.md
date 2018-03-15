@@ -2,6 +2,7 @@
 layout: post
 author: dr_nate
 title: If Only Mom Had Known...
+keywords: colic, fussy baby, baby won't sleep, chiorpractic, chiropractor, infant reflux, breastfeeding, infant formula, baby formula
 post_image: /assets/posts/images/if-only-mom-had-known-colic-reflux.jpg
 ---
 ## Colic / Reflux
