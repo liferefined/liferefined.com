@@ -2,6 +2,7 @@
 layout: post
 author: lacey_lind
 title: The Influence of Positive Thinking
+keywords: snooze, mindset, hiccups
 post_image: /assets/posts/images/what-consumes-your-mind-controls-your-life.png
 ---
 As you roll over to the edge of the bed, you glance at the clock. It reads 7:48 am.
