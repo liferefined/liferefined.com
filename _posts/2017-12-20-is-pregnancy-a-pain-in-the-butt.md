@@ -2,6 +2,7 @@
 layout: post
 author: dr_staci
 title: Is Pregnancy a Pain in the Butt?
+keywords: pregnancy butt pain, sciatica, low back pain, chiropractic, chiropractor, Fishers, Geist, noblesville, Hamilton Town Center
 post_image: /assets/posts/images/is-pregnancy-a-pain-in-the-butt.jpg
 ---
 There are countless ways a woman’s body changes through pregnancy. One of the most
