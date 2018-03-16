@@ -2,6 +2,7 @@
 layout: post
 author: dr_staci
 title: There's No Such Thing As A "Normal" Headache
+keywords: headaches, migraines, chiropractic, chiropractor, Noblesville, Fortville, McCordsville, Geist, Fishers
 post_image: /assets/posts/images/theres-no-such-thing-as-a-normal-headache.jpg
 ---
 It’s scary to think about how many times I’ve heard a practice member tell me, “it’s just a
