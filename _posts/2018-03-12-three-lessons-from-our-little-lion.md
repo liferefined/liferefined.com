@@ -2,7 +2,7 @@
 layout: post
 author: dr_staci
 title: Three Lessons From Our Little Lion
-keywords: office nanny, baby at work, chiropractic, hamilton town center, fishers, geist, noblesville, little lion, roar, pride, community, recovery
+keywords: office nanny, baby at work, chiropractic, hamilton town center, fishers, geist, noblesville, little lion
 post_image: /assets/posts/images/three-lessons-from-our-little-lion.jpg
 ---
 Imagine. You’re relaxed, lying on the adjusting table and ready to receive an adjustment you know will improve your day. In the background, you hear a loud and happy voice projecting more loudly than the baby’s age would initially make you believe possible. That’s Milah! We call her our “little lion,” as she’s just recently found her voice and loves to use it. She’s never been a crier – but it does appear as though she, too, will be a public speaker one day, and she’s already practicing her skill. 
