@@ -595,7 +595,7 @@ header {
   @include header('adult', 'small', 'adult_services.jpg', 'adult_services_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
   @include header('ten-steps', 'micro', 'back_kids.jpg', 'back_kids_md.jpg');
-  @include header('meet-us', 'medium', 'meet_the_blumes.jpg', 'meet_the_blumes.jpg', top);
+  @include header('meet-us', 'medium', 'meet_the_blumes_with_milah.jpg', 'meet_the_blumes_with_milah_md.jpg');
   @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
   @include header('post', 'small', 'blog.jpg', 'blog_md.jpg');
   @include header('location', 'micro', 'back_gaze.jpg', 'back_gaze_md.jpg');
