@@ -3,7 +3,7 @@ layout: post
 author:
   - dr_staci
   - dr_nate
-  keywords: infertility, IVF, trouble conceiving, trouble getting pregnant, chiropractic and infertility
+keywords: infertility, IVF, trouble conceiving, trouble getting pregnant, chiropractic and infertility
 title: Chiropractic and Fertility - What's the Connection?
 youtube: S9Ej6eLCdJ8
 ---
