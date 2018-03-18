@@ -285,41 +285,8 @@ img {
 }
 
 section {
-  .post-image-preview {
-    $circle-size: 200px;
-
-    display: inline-block;
-    position: relative;
-    width: $circle-size;
-    height: $circle-size;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 1px solid $theme-primary;
-
-    &.small {
-      width: $circle-size / 2;
-      height: $circle-size / 2;
-    }
-
-    @media (max-width: $screen-sm) {
-      width: $circle-size / 2;
-      height: $circle-size / 2;
-    }
-
-    &.pull-left {
-      margin-right: 15px;
-    }
-
-    &.pull-right {
-      margin-left: 15px;
-    }
-
-    > img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
+  @include circled-image('post-image-preview', 200px);
+  @include circled-image('bio-image', 300px);
 
   &.blog {
     img {
