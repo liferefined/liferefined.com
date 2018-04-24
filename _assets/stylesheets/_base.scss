@@ -566,6 +566,7 @@ header {
   @include header('meet-us', 'medium', 'meet_the_blumes_with_milah.jpg', 'meet_the_blumes_with_milah_md.jpg');
   @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
   @include header('post', 'small', 'blog.jpg', 'blog_md.jpg');
+  @include header('recipe', 'small', 'recipe.jpg', 'recipe_md.jpg', top);
   @include header('location', 'micro', 'back_gaze.jpg', 'back_gaze_md.jpg');
 }
 

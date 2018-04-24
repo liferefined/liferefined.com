@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="liferefined">
+
+{% include head.html %}
+
+{% capture navigation_slim %}{% include nav.slim %}{% endcapture %}
+{% capture wrote_or_recorded %}{% if page.youtube %}recorded{% else %}wrote{% endif %}{% endcapture %}
+{{ navigation_slim | slimify }}
+
+
+<body id="page-top" data-ng-controller="MailChimp as self">
+  <header class="recipe">
+    <div class="header-content">
+      <div class="header-content-inner text-center">
+        <h1>{{ page.title }}</h1>
+        <hr>
+      </div>
+    </div>
+  </header>
+
+  <section class="copy blog">
+    {% if page.recipe_image %}
+    <img alt="{{ page.title }}" src="{{ page.post_image }}" class="post-theme">
+    {% endif %}
+    <div class="text-justify">
+      {{ content }}
+    </div>
+  </section>
+
+  {% assign wordcount = page.content | strip_html |  number_of_words %}
+  {% assign author = site.data.authors[page.author] %}
+  {% unless author %}
+  {% assign author = site.data.authors[page.author.first] %}
+  {% endunless %}
+
+  <script type="application/ld+json">
+    {
+      "@context":"http://schema.org",
+      "@type":"BlogPosting",
+      "headline":"{{ page.title }}",
+      "genre":"{{ page.category }}",
+      "keywords":"{{ page.keywords }}",
+      "wordCount":"{{ wordcount }}",
+      "url":"{{ site.url }}{{ page.url }}",
+      "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
+      "dateModified":"{{ page.date | date: '%Y-%m-%d' }}",
+      "author":{
+         "@type":"Person",
+         "name":"{{ author.name }}",
+         "sameAs":[ "{{ author.url }}" ]
+      },
+      "publisher":{
+         "@type":"Organization",
+         "name":"Life Refined Chiropractic",
+         "sameAs":[
+           "https://www.instagram.com/life.refined/",
+           "https://www.facebook.com/liferefinedchiro"
+         ],
+         "logo": {
+         "@type": "ImageObject",
+         "contentUrl": "{{ site.url }}/img/life_refined_dark.svg",
+         "url": "{{ site.url }}"
+       }
+      },
+      "image":{
+         "@type":"ImageObject",
+         "contentUrl":"{{ site.url }}{{ page.post_image }}",
+         "url":"{{ site.url }}"
+      },
+      "mainEntityOfPage":{
+         "@type":"WebPage",
+         "@id":"{{ site.url }}{{ page.url }}"
+      },
+      "articleBody":"{{ page.content | replace:'“','"' | replace:'”','"' | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+    }
+  </script>
+
+  {% include inline_subscribe.html %}
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+
+</html>
+
