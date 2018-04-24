@@ -20,61 +20,24 @@
 
   <section class="copy blog">
     {% if page.recipe_image %}
-    <img alt="{{ page.title }}" src="{{ page.post_image }}" class="post-theme">
+    <img alt="{{ page.title }}" src="/assets/recipes/images/{{ page.recipe_image }}" class="post-theme">
     {% endif %}
     <div class="text-justify">
+      <h2>Ingredients</h2>
+      <ul>
+        {% for ingredient in page.ingredients %}
+        <li>{{ ingredient }}</li>
+        {% endfor %}
+      </ul>
+      <h2>Instructions</h2>
+      <ul>
+        {% for instruction in page.instructions %}
+        <li>{{ instruction }}</li>
+        {% endfor %}
+      </ul>
       {{ content }}
     </div>
   </section>
-
-  {% assign wordcount = page.content | strip_html |  number_of_words %}
-  {% assign author = site.data.authors[page.author] %}
-  {% unless author %}
-  {% assign author = site.data.authors[page.author.first] %}
-  {% endunless %}
-
-  <script type="application/ld+json">
-    {
-      "@context":"http://schema.org",
-      "@type":"BlogPosting",
-      "headline":"{{ page.title }}",
-      "genre":"{{ page.category }}",
-      "keywords":"{{ page.keywords }}",
-      "wordCount":"{{ wordcount }}",
-      "url":"{{ site.url }}{{ page.url }}",
-      "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
-      "dateModified":"{{ page.date | date: '%Y-%m-%d' }}",
-      "author":{
-         "@type":"Person",
-         "name":"{{ author.name }}",
-         "sameAs":[ "{{ author.url }}" ]
-      },
-      "publisher":{
-         "@type":"Organization",
-         "name":"Life Refined Chiropractic",
-         "sameAs":[
-           "https://www.instagram.com/life.refined/",
-           "https://www.facebook.com/liferefinedchiro"
-         ],
-         "logo": {
-         "@type": "ImageObject",
-         "contentUrl": "{{ site.url }}/img/life_refined_dark.svg",
-         "url": "{{ site.url }}"
-       }
-      },
-      "image":{
-         "@type":"ImageObject",
-         "contentUrl":"{{ site.url }}{{ page.post_image }}",
-         "url":"{{ site.url }}"
-      },
-      "mainEntityOfPage":{
-         "@type":"WebPage",
-         "@id":"{{ site.url }}{{ page.url }}"
-      },
-      "articleBody":"{{ page.content | replace:'“','"' | replace:'”','"' | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
-    }
-  </script>
-
   {% include inline_subscribe.html %}
   {% include footer.html %}
   {% include scripts.html %}
