@@ -1,4 +1,5 @@
 ---
+category: breakfast
 recipe_image: chocolate-banana-protein-pancakes.png
 ingredients:
 - 1 ripe banana

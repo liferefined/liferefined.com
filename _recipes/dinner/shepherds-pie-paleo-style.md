@@ -1,4 +1,5 @@
 ---
+category: dinner
 recipe_image: shepherds-pie-paleo-style.png
 ingredients:
 - 1 large head of cauliflower - cut into florets

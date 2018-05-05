@@ -1,4 +1,5 @@
 ---
+category: brunch
 recipe_image: peppery-hot-tuna-cakes.png
 ingredients:
 - 3 tablespoons melted ghee, divided

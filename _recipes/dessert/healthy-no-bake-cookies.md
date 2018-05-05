@@ -1,4 +1,5 @@
 ---
+category: dessert
 recipe_image: healthy-no-bake-cookies.png
 ingredients:
 - 1 cup almond butter

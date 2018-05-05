@@ -1,0 +1,35 @@
+---
+layout: front
+title: Our Recipes
+---
+
+{% capture navigation_slim %}{% include nav.slim %}{% endcapture %}
+{{ navigation_slim | slimify }}
+
+<header class="recipe">
+  <div class="header-content">
+    <div class="header-content-inner text-center">
+      <h1>Recipes</h2>
+      <hr />
+    </div>
+  </div>
+</header>
+
+<section class="row copy blog-preview">
+{% assign recipe_categories = site.recipes | group_by: 'category' %}
+{% for category in recipe_categories %}
+  <div class="col-xs-12">
+    <h1 class="text-capitalize">{{ category.name }}</h1>
+    {% for recipe in category.items %}
+      <div class="blog-preview col-xs-3">
+        <div class="post-image-preview small">
+          <img class="post-theme" alt="{{ recipe.name }}" src="/assets/recipes/images/{{ recipe.recipe_image }}">
+        </div>
+        <h4>
+          <a href="{{ recipe.url }}">{{ recipe.title }}</a>
+        </h4>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+</section>
