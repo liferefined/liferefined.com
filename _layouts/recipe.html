@@ -24,11 +24,25 @@
     {% endif %}
     <div class="text-justify">
       <h2>Ingredients</h2>
+      {% if page.ingredients.first.first %}
+      <ul>
+        {% for list in page.ingredients %}
+        <li>{{ list.first[0] }}
+          <ul>
+          {% for ingredient in list.first[1] %}
+          <li>{{ ingredient }}</li>
+          {% endfor %}
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
       <ul>
         {% for ingredient in page.ingredients %}
         <li>{{ ingredient }}</li>
         {% endfor %}
       </ul>
+      {% endif %}
       <h2>Instructions</h2>
       <ul>
         {% for instruction in page.instructions %}
