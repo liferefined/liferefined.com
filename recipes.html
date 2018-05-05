@@ -18,10 +18,10 @@ title: Our Recipes
 <section class="row copy blog-preview">
 {% assign recipe_categories = site.recipes | group_by: 'category' %}
 {% for category in recipe_categories %}
-  <div class="col-xs-12">
+  <div class="col-sm-12">
     <h2 class="text-capitalize">{{ category.name }}</h2>
     {% for recipe in category.items %}
-      <div class="blog-preview col-xs-3">
+      <div class="blog-preview col-sm-3">
         <div class="post-image-preview small">
           <img class="post-theme" alt="{{ recipe.name }}" src="/assets/recipes/images/{{ recipe.recipe_image }}">
         </div>
