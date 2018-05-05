@@ -19,7 +19,7 @@ title: Our Recipes
 {% assign recipe_categories = site.recipes | group_by: 'category' %}
 {% for category in recipe_categories %}
   <div class="col-xs-12">
-    <h1 class="text-capitalize">{{ category.name }}</h1>
+    <h2 class="text-capitalize">{{ category.name }}</h2>
     {% for recipe in category.items %}
       <div class="blog-preview col-xs-3">
         <div class="post-image-preview small">
