@@ -1,4 +1,7 @@
 ---
+author: lacey_lind
+prep_minutes: 30
+cook_minutes: 25
 category: brunch
 recipe_image: peppery-hot-tuna-cakes.png
 ingredients:

@@ -1,5 +1,8 @@
 ---
+author: lacey_lind
 category: dinner
+prep_minutes: 15
+cook_minutes: 30
 recipe_image: red-curry-thai-noodle-soup.png
 ingredients:
 - 2 Tbsp avacado cooking oil

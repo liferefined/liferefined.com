@@ -1,5 +1,7 @@
 ---
 category: dinner
+prep_minutes: 10
+cook_minutes: 35
 recipe_image: shepherds-pie-paleo-style.png
 ingredients:
   - Top Layer:

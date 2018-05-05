@@ -1,4 +1,7 @@
 ---
+author: lacey_lind
+prep_minutes: 5
+cook_minutes: 4
 category: breakfast
 recipe_image: chocolate-banana-protein-pancakes.png
 ingredients:

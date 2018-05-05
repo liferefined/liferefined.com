@@ -1,5 +1,8 @@
 ---
+author: lacey_lind
 category: dessert
+prep_minutes: 10
+cook_minutes: 0
 recipe_image: healthy-no-bake-cookies.png
 ingredients:
 - 1 cup almond butter
