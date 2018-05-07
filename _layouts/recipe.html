@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="liferefined">
+
+{% include head.html %}
+
+{% capture navigation_slim %}{% include nav.slim %}{% endcapture %}
+{% capture wrote_or_recorded %}{% if page.youtube %}recorded{% else %}wrote{% endif %}{% endcapture %}
+{{ navigation_slim | slimify }}
+
+
+<body id="page-top" data-ng-controller="MailChimp as self">
+  <header class="recipe">
+    <div class="header-content">
+      <div class="header-content-inner text-center">
+        <h1>{{ page.title }}</h1>
+        <hr>
+      </div>
+    </div>
+  </header>
+
+  <section class="row copy blog">
+    {% if page.recipe_image %}
+    <img alt="{{ page.title }}" src="/assets/recipes/images/{{ page.recipe_image }}" class="post-theme">
+    {% endif %}
+    <div class="text-justify">
+      <h2>Ingredients</h2>
+      {% if page.ingredients.first.first %}
+      <ul>
+        {% for list in page.ingredients %}
+        <li>{{ list.first[0] }}
+          <ul>
+          {% for ingredient in list.first[1] %}
+          <li>{{ ingredient }}</li>
+          {% endfor %}
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <ul>
+        {% for ingredient in page.ingredients %}
+        <li>{{ ingredient }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <h2>Instructions</h2>
+      <ul>
+        {% for instruction in page.instructions %}
+        <li>{{ instruction }}</li>
+        {% endfor %}
+      </ul>
+      {{ content }}
+    </div>
+  </section>
+  {% include inline_subscribe.html %}
+  {% include footer.html %}
+  {% include scripts.html %}
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Recipe",
+      "name": "{{ page.title }}",
+      "keywords": "{{ page.category }}",
+      "description":"{{ page.description | default: page.title }}",
+      "recipeCategory": "{{ page.category }}",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "{{ page.calories | default: '100' | append: ' calories' }}"
+      },
+      "recipeCuisine": "{{ page.cuisine | default: 'American' }}",
+      "url":"{{ site.url }}{{ page.url }}",
+      "cookTime": "PT{{ page.cook_minutes }}M",
+      "prepTime": "PT{{ page.prep_minutes }}M",
+      "author":{
+         "@type":"Person",
+         "name":"{{ author.name }}",
+         "sameAs":[ "{{ author.url }}" ]
+      },
+      "image":{
+         "@type":"ImageObject",
+         "contentUrl":"{{ site.url }}/assets/recipes/images/{{ page.recipe_image }}",
+         "url":"{{ site.url }}"
+      },
+      "recipeIngredient": [
+        {% if page.ingredients.first.first %}
+          {% for list in page.ingredients %}{% for ingredient in list.first[1] %}
+          "{{ingredient}}"{% if forloop.last == false %},{% endif %}{% endfor %}{% if forloop.last == false %},{% endif %}{% endfor %}
+        {% else %}
+          {% for ingredient in page.ingredients %}
+          "{{ingredient}}"{% if forloop.last == false %},{% endif %}{% endfor  %}
+        {% endif %}
+      ],
+      "recipeInstructions": [{% for instruction in page.instructions %}
+        {
+          "@type": "HowToStep",
+          "text": "{{ instruction }}"
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
+      ]
+    }
+  </script>
+</body>
+
+</html>
+

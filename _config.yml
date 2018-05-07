@@ -19,6 +19,10 @@ description: Life Refined Chiropractic exists to radically reenergize our commun
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.liferefined.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+collections:
+  recipes:
+    output: true
+
 defaults:
   -
     scope:
@@ -30,6 +34,11 @@ defaults:
       path: _posts
     values:
       type: article
+  -
+    scope:
+      path: _recipes
+    values:
+      layout: recipe
 
 navigation:
 - text: Home
@@ -40,6 +49,8 @@ navigation:
   url: /services/
 - text: Blog
   url: /blog/
+- text: Recipes
+  url: /recipes/
 - text: Events
   url: https://www.facebook.com/pg/liferefinedchiro/events
 - text: Meet Us
