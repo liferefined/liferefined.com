@@ -70,8 +70,8 @@
       },
       "recipeCuisine": "{{ page.cuisine | default: 'American' }}",
       "url":"{{ site.url }}{{ page.url }}",
-      "cookTime": "PT{{ page.cook_minutes }}M",
-      "prepTime": "PT{{ page.prep_minutes }}M",
+      "cookTime": "PT{{ page.cook_minutes | default: '10' }}M",
+      "prepTime": "PT{{ page.prep_minutes | default: '10' }}M",
       "author":{
          "@type":"Person",
          "name":"{{ author.name }}",
