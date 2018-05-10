@@ -85,16 +85,16 @@
       "recipeIngredient": [
         {% if page.ingredients.first.first %}
           {% for list in page.ingredients %}{% for ingredient in list.first[1] %}
-          "{{ingredient}}"{% if forloop.last == false %},{% endif %}{% endfor %}{% if forloop.last == false %},{% endif %}{% endfor %}
+          "{{ingredient | replace:'“','"' | replace: '”', '"' | replace:'"','\\"'}}"{% if forloop.last == false %},{% endif %}{% endfor %}{% if forloop.last == false %},{% endif %}{% endfor %}
         {% else %}
           {% for ingredient in page.ingredients %}
-          "{{ingredient}}"{% if forloop.last == false %},{% endif %}{% endfor  %}
+          "{{ingredient | replace:'“','"' | replace: '”', '"' | replace:'"','\\"'}}"{% if forloop.last == false %},{% endif %}{% endfor  %}
         {% endif %}
       ],
       "recipeInstructions": [{% for instruction in page.instructions %}
         {
           "@type": "HowToStep",
-          "text": "{{ instruction }}"
+          "text": "{{ instruction | replace:'“','"' | replace: '”', '"' | replace:'"','\\"'}}"
         }{% if forloop.last == false %},{% endif %}{% endfor %}
       ]
     }
