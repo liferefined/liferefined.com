@@ -1,6 +1,6 @@
 ---
 author: lacey_lind
-category: dinner
+category: snacks
 recipe_image: blueberry-strawberry-jicama-salsa.png
 ingredients:
 - 1 cup blueberries
@@ -15,4 +15,3 @@ instructions:
 - In a medium sized bowl, combine all ingredients. Mix well. 
 - Serve with tortilla or sweet potato chips. It is also great on grilled fish or chicken.
 ---
-
