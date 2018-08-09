@@ -1,6 +1,6 @@
 ---
 layout: post
-author: wayne_cohen
+author: dr_staci
 title: Chiropractic Care to Treat Injuries Related to Personal Injury
 post_image: /assets/posts/images/chiropractic-care-to-treat-injuries-related-to-personal-injury.jpg
 ---
