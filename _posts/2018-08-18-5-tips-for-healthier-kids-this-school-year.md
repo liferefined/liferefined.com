@@ -28,10 +28,12 @@ Starting the day with a healthy breakfast isn’t just good for our health. It k
 
 ## #3 Backpacks and Posture
 Keeping your child’s spine healthy is more important than most people realize. This is especially true of a child’s growing spine, which has an impact on their health and body function for the rest of their lives! While there’s not a lot you can do about their posture in their desk at school, there’s still a great deal of opportunity at home that will have a positive impact.
-• Backpacks should be less than 15% of body weight and worn with both straps
-• Ensure your child is sleeping with the proper size pillow, so their spine stays straight in any sleeping position (not using a pillow is ok, too – too big is the worst)
-• Kids spend enough time looking down at a screen or paperwork on a school desk. This reverses the proper curve in their neck and can lead to poor posture and headaches among other issues. Help them keep books lifted to eye level and encourage full-body activities that keep them from sitting in one place for hours on end. 
-#4 Nutrition and Supplements
+
+* Backpacks should be less than 15% of body weight and worn with both straps
+* Ensure your child is sleeping with the proper size pillow, so their spine stays straight in any sleeping position (not using a pillow is ok, too – too big is the worst)
+* Kids spend enough time looking down at a screen or paperwork on a school desk. This reverses the proper curve in their neck and can lead to poor posture and headaches among other issues. Help them keep books lifted to eye level and encourage full-body activities that keep them from sitting in one place for hours on end.
+
+## #4 Nutrition and Supplements
 Just like at breakfast time, it’s important to stick with healthy nutrition habits throughout the day. Making your child’s lunch? We often grill a bunch of meals on Sunday, and have prepped to put in lunch boxes all week long. Making hamburgers for dinner? Use an extra pound and have for lunches a few days, too. Find foods your kids like (save the stress of an argument – mindset, right?) and make sure they’re in the refrigerator before the Monday morning excitement. We keep a list of snacks on the back of our pantry door so our kids know what they can (and can’t ask for). The list has two sections:
 
 * Proteins / Non-Sugars First
@@ -58,7 +60,7 @@ No matter how well we eat, it’s difficult to get all of our required nutrition
 
 When it comes to nutritional supplements, it’s important to get ones of great quality. The last thing you want to do is buy a cheap omega-3 made from unhealthy, contaminated fish. Reach out to your natural healthcare provider who can provide professional, effective options best for your family.
 
-#5 Chiropractic – The Missing Link
+## #5 Chiropractic – The Missing Link
 What if I told you that there is a researched way to improve the immune system by 200%? You’d be interested, right? Turns out, we’ve known since the 80’s that chiropractic care has this impact. Even more stunning, the immune system of those under regular chiropractic care is 400% stronger than those who are chronically ill. Most people’s experience or exposure to chiropractic has been limited to the idea that an adjustment is helpful for a headache or back pain – but there’s so much more to it than that! To find a chiropractor who focuses on whole-body health, look for these things:
 
 * Consistent use of technology to measure nerve system function
