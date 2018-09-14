@@ -9,6 +9,9 @@ dr_nate:
 lacey_lind:
   name: Lacey Lind, Office Nanny
   photo: /assets/posts/images/lacey_lind.jpg
+guest:
+  name: Guest
+  photo: /assets/posts/images/guest.png
 sarah_harding:
   name: Sarah Harding, Office Manager
   photo: /assets/posts/images/sarah_harding.jpg
