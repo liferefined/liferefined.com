@@ -30,9 +30,7 @@ class @MailChimp
     shouldAsk = ->
       $location.absUrl().indexOf(Current.ignore) is -1 and $cookies.get(Current.cookie) isnt 'yes'
 
-    @campaign = Current.name
-
-    $timeout (=> @askToSubscribe = true), 5000 if shouldAsk()
+    $timeout (=> @askToSubscribe = !!@campaign), 5000 if shouldAsk()
     @user = {}
 
   close: =>
