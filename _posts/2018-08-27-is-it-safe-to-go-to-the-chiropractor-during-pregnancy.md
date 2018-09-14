@@ -1,11 +1,13 @@
 ---
 layout: post
-author: guest
+author: dr_nate
 keywords: chiropractor, during, pregnancy
 title: Is it Safe to Go to the Chiropractor During Pregnancy?
 post_image: /assets/posts/images/is-it-safe-to-go-to-the-chiropractor-during-pregnancy.jpg
 ---
-With all the changes to your body during pregnancy, you back can start to feel out of whack. But is it safe to go get an adjustment with a baby bump? Click here to learn about seeing a chiropractor during pregnancy.  We know that the strain of pregnancy and carrying a child can put some serious strain on your back! After all, your body undergoes some serious rearranging to make space for that little baby! If you're like most women, you've likely experienced some level of [back pain](http://americanpregnancy.org/pregnancy-health/back-pain-during-pregnancy/) over the course of your pregnancy.
+We know that the strain of pregnancy and carrying a child can put some serious strain on your back! After all, your body undergoes some serious rearranging to make space for that little baby!
+
+If you're like most women, you've likely experienced some level of [back pain](http://americanpregnancy.org/pregnancy-health/back-pain-during-pregnancy/) over the course of your pregnancy.
 
 What if you already had poor posture, scoliosis or were overweight before you became pregnant?
 
@@ -15,16 +17,16 @@ Usually, this pain is caused by a sudden surge in your hormones, a forward-tilte
 
 But can you see a chiropractor [during pregnancy](https://www.liferefined.com/2018/05/21/baby-formula/)?
 
-That's what this post is all about.
+That's what this post is all about. If you've ever asked yourself:
 
-If you've ever asked yourself, "Can I go to the chiropractor while pregnant?" then you need to keep reading.
+> _"Can I go to the chiropractor while pregnant?"_
 
-We'll also let you know where you can find the [top chiropractic care](https://www.liferefined.com/meet-us/) for yourself as well as the other members of your family.
+then you need to keep reading. We'll also let you know where you can find the [top chiropractic care](https://www.liferefined.com/meet-us/) for yourself as well as the other members of your family.
 
 ## Is It Safe to Go to Chiropractor When Pregnant?
 Let's begin by answering the most important question of them all: can you go to the chiropractor while pregnant?
 
-In a word: yes. In two words: you should.
+In a word: **yes**. In two words: you _should_.
 
 Prenatal massage has been heralded as an effective way to ease the symptoms and stress of pregnancy for decades now. You should think of chiropractic care as an even more efficient and effective way to see those benefits.
 
@@ -32,7 +34,7 @@ Remember that chiropractic care doesn't involve any kind of drugs/medication or 
 
 Plus, you'll see the benefits not just in your back, but throughout your entire body. In fact - your baby benefits, too.
 
-The Benefits of a Chiropractic Adjustment during Pregnancy
+## The Benefits of a Chiropractic Adjustment during Pregnancy
 Now that you understand that it's safe to see a chiropractor during pregnancy, let's take a look at the benefits of doing so.
 
 First of all, you'll finally get relief from the debilitating pain that's making it tough for you to resume your regular daily activities. Remember that this pain is likely caused by the pressure that's put on your spine and nerves as your bodies' center of gravity changes as you gain weight.
@@ -63,7 +65,7 @@ Make sure you talk to your medical professional and OB/GYN if you're dealing wit
 
 These are the few and sporadic conditions that might make it [a bit more complicated](https://www.liferefined.com/2018/04/23/when-to-stop-seeing-a-chiropractor/) for you to see a chiropractor while you're expecting, but certainly not impossible. Just make certain your chiropractor is aware of these conditions.
 
-Other Ways to Minimize Back Pain during Pregnancy
+## Other Ways to Minimize Back Pain during Pregnancy
 Now that we've covered visiting a chiropractor during pregnancy?
 
 Let's quickly talk about a few of the other ways in which you can manage your back pain while you're expecting.
@@ -80,7 +82,7 @@ This will help to make your back and your abs a bit stronger. Plus, it's also a 
 
 Finally, you may want to invest in a support belt (also known as a belly band.) This will offer your abs and lower back cushion and serious support. Plus, they'll also help you to make sure that you're keeping your posture in the right place.
 
-Looking for a Trusted Chiropractor during Pregnancy?
+## Looking for a Trusted Chiropractor during Pregnancy?
 We hope that this post has convinced you that it's not only safe to see a chiropractor during pregnancy, but also that it's an excellent and effective idea.
 
 If you're looking for relief from pain, stress, and even want to learn how an adjustment can help you out in the delivery room?
