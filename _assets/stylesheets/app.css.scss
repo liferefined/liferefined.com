@@ -42,4 +42,4 @@ $theme-dark: #222;
 $logo-peru: #C28441;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "config", "mixins", "base";
+@import "badge", "config", "mixins", "base";
