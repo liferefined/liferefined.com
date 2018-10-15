@@ -2,7 +2,7 @@
 layout: post
 author: dr_staci
 title: 5 "Switch Witch" Swaps for a Healthier Halloween
-keywords: healthy, halloween, wellness
+keywords: teal pumpkin project, healthy halloween, switch witch, organic
 post_image: /assets/posts/images/5-switch-witch-swaps-for-a-healthier-halloween.jpg
 ---
 As a healthcare provider, I see it all the time. The community in general thinks that the cooler weather and kids back in school must inevitably mean that sickness will soon follow. But when you take a step back and consider the actual cause and contributors to illness – there are a lot of health swaps we can make to help prevent what many think is the inevitable.
