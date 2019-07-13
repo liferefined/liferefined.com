@@ -155,6 +155,10 @@ label {
     height: $youtube-height / 2;
   }
 
+  &.pull-right {
+    margin-left: 10px;
+  }
+
   @media (max-width: $screen-sm) {
     iframe.youtube {
       margin: 0;
@@ -558,7 +562,7 @@ header {
     }
   }
 
-  @include header('landing', 'large', 'back_gaze.jpg', 'back_gaze_md.jpg');
+  @include header('landing', 'medium', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('subpage', 'small', 'back_gaze.jpg', 'back_gaze_md.jpg');
   @include header('adult', 'small', 'adult_services.jpg', 'adult_services_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
