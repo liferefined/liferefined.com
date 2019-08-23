@@ -34,8 +34,9 @@ section.copy
     li Mood + Stress
 
   .text-center
-    a.btn.btn-primary.btn-xl target="_blank" href="https://clients.mindbodyonline.com/classic/ws?studioid=488020&stype=-105&sTG=4&sView=week&sLoc=1" Schedule
+    a.btn.btn-primary.btn-xl ng-click="scheduling = !scheduling" Schedule
     a.btn.btn-primary.btn-xl href="/forms/c9180_BlumeADULT-Intake-Pack.pdf" target="_blank" Adult Forms
+  iframe.ng-cloak.schedule data-ng-if="scheduling" src="https://app2.sked.life/webmodule/?key=1bee8bb94d7fe3f751578179795e7995196362687a3de8414561c8354e45b5c2"
 
 section.kids
   h1.text-center Pediatrics
