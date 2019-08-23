@@ -32,27 +32,29 @@ section.copy
       .col-md-4.text-center
         h2.section-heading We Have One Goal
         hr
-        p.text-justify At Life Refined Chiropractic (LRC), we have one mission: to see you living your life as close to  your 100% as possible. Whether it's eliminating or reducing pain, stiffness or headaches, improving focus at school or work, increasing physical performance & mobility, or experiencing more energy at the end of the day with those you love, we want to help you acheive your 100% as quickly as possible. Our doctors provide the latest and most advanced care available in the Noblesville and Fishers area.
+        blockquote.text-justify
+          p.text-justify At Life Refined Chiropractic (LRC), we have one mission: to see you living your life as close to  your 100% as possible. Whether it's eliminating or reducing pain, stiffness or headaches, improving focus at school or work, increasing physical performance & mobility, or experiencing more energy at the end of the day with those you love, we want to help you acheive your 100% as quickly as possible. Our doctors provide the latest and most advanced care available in the Noblesville and Fishers area.
       .col-md-4.text-center
         h2.section-heading Latest From LRC
         hr
-        {% for post in site.posts limit:1 %}
-        {% for a in post.author %}
-        {% assign author = site.data.authors[a] %}
-        .pull-right.blog-preview
-          .post-image-preview.small
-            img.post-theme alt="{{ page.title }}" src="{{ post.post_image }}" class="post-theme"
-        p.clear.text-justify
-          | {{ post.content | strip_html | truncatewords: 100 }}
-          a href="{{ post.url }}"
-            |   Read more
-        .pull-left
-          a.link-unstyled href="{{ author.url }}" target="_blank"
-            img.profile.profile-small alt="{{ author.name }}" src="{{ author.photo }}"
+        blockquote.text-justify
+          {% for post in site.posts limit:1 %}
+          {% for a in post.author %}
+          {% assign author = site.data.authors[a] %}
+          .pull-right.blog-preview
+            .post-image-preview.small
+              img.post-theme alt="{{ page.title }}" src="{{ post.post_image }}" class="post-theme"
+          p.clear.text-justify
+            | {{ post.content | strip_html | truncatewords: 100 }}
+            a href="{{ post.url }}"
+              |   Read more
+          .pull-left
+            a.link-unstyled href="{{ author.url }}" target="_blank"
+              img.profile.profile-small alt="{{ author.name }}" src="{{ author.photo }}"
+            {% endfor %}
+            em
+              | {{ post.date | date: '%B %d, %Y' }}
           {% endfor %}
-          em
-            | {{ post.date | date: '%B %d, %Y' }}
-        {% endfor %}
       .col-md-4.text-center
         h2.section-heading What Our Clients Say
         hr
