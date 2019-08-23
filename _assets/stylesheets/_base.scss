@@ -274,7 +274,20 @@ ul.flex {
   }
 }
 
+.landing-blurb {
+  border-left: 5px solid #eee;
+  padding-left: 10px;
+}
+
 img {
+  &.testimonial {
+    margin: 5px !important;
+    padding: 2px !important;
+    height: 100px;
+    border-radius: 50% !important;
+    border: 1px solid $theme-primary !important;
+  }
+
   &.profile {
     margin: 0 !important;
     padding: 2px !important;

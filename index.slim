@@ -32,12 +32,12 @@ section.copy
       .col-md-4.text-center
         h2.section-heading We Have One Goal
         hr
-        blockquote.text-justify
+        .text-justify
           p.text-justify At Life Refined Chiropractic (LRC), we have one mission: to see you living your life as close to  your 100% as possible. Whether it's eliminating or reducing pain, stiffness or headaches, improving focus at school or work, increasing physical performance & mobility, or experiencing more energy at the end of the day with those you love, we want to help you acheive your 100% as quickly as possible. Our doctors provide the latest and most advanced care available in the Noblesville and Fishers area.
       .col-md-4.text-center
         h2.section-heading Latest From LRC
         hr
-        blockquote.text-justify
+        .landing-blurb.text-justify
           {% for post in site.posts limit:1 %}
           {% for a in post.author %}
           {% assign author = site.data.authors[a] %}
@@ -58,35 +58,27 @@ section.copy
       .col-md-4.text-center
         h2.section-heading What Our Clients Say
         hr
-        blockquote.text-justify
+        .landing-blurb.text-justify
+          .pull-right
+            a.link-unstyled href="/testimonials"
+              img.testimonial alt="Natalie" src="assets/posts/images/natalie_testimonial.png"
           p
-            em My life has changed in so many positive ways since seeing Dr Staci & Dr Nate.  My overall health and wellness is not only important to me but it is also their focus.  I have had significant "monthly" pain -- this is the first month that I have had significant relief.  Their personalized approach is refreshing.  The atmosphere of the office is welcoming & calming.  Sarah is so helpful and kind.  The doctors will give you the time for questions you may have about their methods.  Life Refined is definitely a game changer!  Bravo
+            | "You guys definitely care about your patients...and make it a very personaized experience."
+          footer.blockquote-footer
+            cite Natalie
+
+          hr
+          .pull-right
+            a.link-unstyled href="/testimonials"
+              img.testimonial alt="Sherri" src="assets/posts/images/sherri_testimonial.png"
+          p
+            | "I'm not able to do this anymore (sit on the floor with kids)...now, as time has gone on, I can do that again."
+          footer.blockquote-footer
+            cite Sherri
+
           a.btn.btn-primary href="/testimonials" More Testimonials
 
-/section.flex.bg-dark.copy
-/  .full.text-center
-/    h2.section-heading Recent Blog Posts
-/    hr.primary
-/
-/{% for post in site.posts limit:5 %}
-/  {% if post.post_image %}
-/  .blog-preview.col-xs-3
-/    .post-image-preview.small
-/      img.post-theme alt="{{ page.title }}" src="{{ post.post_image }}" class="post-theme"
-/    h4
-/      a href="{{ post.url }}"
-/        | {{ post.title }}
-/  {% endif %}
-/{% endfor %}
-
 {% include portfolio.slim %}
-
-/aside.bg-dark
-/  .container.text-center
-/    h2.section-heading Our Services
-/    hr
-/    .call-to-action
-/      a.btn.btn-primary.btn-xl href="/services" Find Out more
 
 aside.bg-dark
   .container.text-center
