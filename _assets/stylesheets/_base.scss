@@ -277,7 +277,11 @@ ul.flex {
 iframe.schedule {
   border: none;
   width: 100%;
-  height: 500px;
+  height: 600px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 25px;
 }
 
 .landing-blurb {
