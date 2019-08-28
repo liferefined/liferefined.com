@@ -8,3 +8,4 @@
 #=require vendor/angular-cookies.min.js
 #=require liferefined.js
 #=require_tree ./controllers
+#=require_tree ./components
