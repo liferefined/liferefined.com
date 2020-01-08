@@ -586,8 +586,8 @@ header {
     }
   }
 
-  @include header('landing', 'medium', 'life_refined_office.jpg', 'life_refined_office_md.jpg', bottom);
-  @include header('subpage', 'small', 'life_refined_office.jpg', 'life_refined_office_md.jpg', bottom);
+  @include header('landing', 'medium', 'life_refined_office.jpg', 'life_refined_office_md.jpg');
+  @include header('subpage', 'small', 'life_refined_office.jpg', 'life_refined_office_md.jpg');
   @include header('adult', 'small', 'adult_services.jpg', 'adult_services_md.jpg');
   @include header('kids', 'small', 'back_kids.jpg', 'back_kids_md.jpg');
   @include header('ten-steps', 'micro', 'back_kids.jpg', 'back_kids_md.jpg');
@@ -595,7 +595,7 @@ header {
   @include header('blog', 'small', 'blog.jpg', 'blog_md.jpg');
   @include header('post', 'small', 'blog.jpg', 'blog_md.jpg');
   @include header('recipe', 'small', 'recipe.jpg', 'recipe_md.jpg', top);
-  @include header('location', 'micro', 'life_refined_office.jpg', 'life_refined_office_md.jpg', bottom);
+  @include header('location', 'micro', 'life_refined_office.jpg', 'life_refined_office_md.jpg');
 }
 
 aside.footer {
