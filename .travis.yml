@@ -1,7 +1,9 @@
 dist: trusty
 language: ruby
 cache: bundler
-script: bundle exec rake build
+script:
+  - gem install -v 1.16.1 bundler --no-rdoc --no-ri
+  - bundle exec rake build
 deploy:
   provider: script
   skip_cleanup: true
