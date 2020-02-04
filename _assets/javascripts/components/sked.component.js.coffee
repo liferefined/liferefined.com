@@ -8,6 +8,7 @@ angular.module('liferefined').component('lifeRefinedSked', {
     <iframe
       class="schedule"
       data-ng-if="$ctrl.scheduling"
-      src="https://app2.sked.life/webmodule/?key=1bee8bb94d7fe3f751578179795e7995196362687a3de8414561c8354e45b5c2"></iframe>
+      src="https://msgsndr.com/widget/booking?calendar=Em6sdxAADWjxeuyU4NVK"></iframe>
+    <script src="https://msgsndr.com/js/embed.js" type="text/javascript"></script>
   '''
 })
