@@ -309,6 +309,17 @@ img {
       height: 50px;
     }
   }
+
+  &.rounded {
+    margin: 10px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid $theme-primary;
+
+    &.rounded-medium {
+      height: 250px;
+    }
+  }
 }
 
 section {
